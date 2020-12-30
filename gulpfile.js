@@ -47,7 +47,7 @@ const minCss = function () {
 exports.minCss = minCss;
 
 const minJs = function () {
-  return gulp.src("/src/js/**/*.js").pipe(uglify()).pipe("dist/js");
+  return gulp.src("/src/js/**/*.js").pipe(uglify()).pipe(gulp.dest("dist/js"));
 };
 
 exports.minJs = minJs;

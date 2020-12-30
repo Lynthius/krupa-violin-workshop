@@ -1,0 +1,32 @@
+/* BASE STYLES
+--------------------------------------------------------------------------- */
+/* 
+Apply a natural box layout to all elements, but allowing components to change. 
+https://css-tricks.com/box-sizing/ 
+*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* font size 62.5% is equal to 10px (use rem units below) */
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  line-height: 35px;
+  font-weight: 400;
+  font-size: 1.6rem; }
+
+img {
+  max-width: 100%; }
+
+/* HEADERS
+--------------------------------------------------------------------------- */
