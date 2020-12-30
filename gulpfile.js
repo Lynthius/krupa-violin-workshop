@@ -1,6 +1,6 @@
 const gulp = require("gulp");
 const sass = require("gulp-sass");
-const minMarkup = require("gulp-hmlmin");
+const minMarkup = require("gulp-htmlmin");
 const minStyle = require("gulp-css");
 const uglify = require("gulp-uglify-es").default;
 const browserSync = require("browser-sync");
