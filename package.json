@@ -1,0 +1,19 @@
+{
+  "name": "krupa-violin-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lynthius/krupa-violin-workshop.git"
+  },
+  "author": "Tomasz Przyborowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lynthius/krupa-violin-workshop/issues"
+  },
+  "homepage": "https://github.com/Lynthius/krupa-violin-workshop#readme"
+}
