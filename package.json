@@ -10,10 +10,15 @@
     "type": "git",
     "url": "git+https://github.com/Lynthius/krupa-violin-workshop.git"
   },
-  "author": "Tomasz Przyborowski",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Lynthius/krupa-violin-workshop/issues"
   },
-  "homepage": "https://github.com/Lynthius/krupa-violin-workshop#readme"
+  "homepage": "https://github.com/Lynthius/krupa-violin-workshop#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
 }
