@@ -19,6 +19,9 @@
   "dependencies": {
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0"
+    "gulp-css": "^0.1.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify-es": "^2.0.0"
   }
 }
