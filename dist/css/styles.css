@@ -20,10 +20,10 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-size: 12px;
+  font-family: 'Nunito', sans-serif;
   line-height: 35px;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   background: #080808;
   color: #B4B4B4; }
 
@@ -40,6 +40,16 @@ h4 {
   font-style: normal;
   font-weight: normal;
   color: #E7E4E0; }
+
+/* SEPARATORS AND BREAKS
+--------------------------------------------------------------------------- */
+@media screen and (min-width: 600px) {
+  .mobile-break {
+    display: none; } }
+
+.image-separator {
+  margin: 6rem 0;
+  width: 101%; }
 
 /* NAVIGATION
 --------------------------------------------------------------------------- */
@@ -162,3 +172,35 @@ h4 {
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase; }
+
+/* SECTIONS
+--------------------------------------------------------------------------- */
+.workshop {
+  padding: 0 3.4rem; }
+  .workshop__title {
+    font-size: 5.6rem;
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin-bottom: 0; }
+  .workshop__subtitle {
+    text-align: right;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.04em;
+    color: #EED4B2; }
+    .workshop__subtitle::before {
+      content: "";
+      background-color: #515151;
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 8.2rem;
+      margin-right: 3rem; }
+  .workshop__paragraph {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 2.7rem;
+    margin-top: 4rem; }
