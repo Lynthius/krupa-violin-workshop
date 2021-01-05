@@ -32,7 +32,9 @@ img {
 
 /* FONTS
 --------------------------------------------------------------------------- */
-h1, h3, h4 {
+h1,
+h3,
+h4 {
   font-family: Orpheus Pro;
   font-style: normal;
   font-weight: normal;
@@ -59,7 +61,7 @@ h1, h3, h4 {
   display: inline-block;
   position: fixed;
   top: 3.2rem;
-  right: 2.5rem;
+  right: 3.2rem;
   width: 5.5rem;
   height: 2.4rem; }
 
@@ -113,3 +115,25 @@ h1, h3, h4 {
 
 .navigation {
   display: none; }
+
+.lang-switcher {
+  display: inline-block;
+  position: fixed;
+  top: 2.5rem;
+  left: 3.2rem; }
+
+.lang-switcher button {
+  z-index: 999;
+  background-color: transparent;
+  border: none;
+  font-family: Orpheus Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FFFFFF; }
+
+/* HERO
+--------------------------------------------------------------------------- */
