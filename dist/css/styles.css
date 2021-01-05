@@ -68,7 +68,7 @@ h4 {
 .hamburger__inner {
   position: absolute;
   width: 100%;
-  height: 1.4px;
+  height: 1.5px;
   background-color: #E2E1DD;
   left: 0%;
   top: 50%;
@@ -79,7 +79,7 @@ h4 {
 .hamburger__inner::after {
   position: absolute;
   width: 100%;
-  height: 1.4px;
+  height: 1.5px;
   background-color: #E2E1DD;
   content: "";
   left: 0;
@@ -137,3 +137,9 @@ h4 {
 
 /* HERO
 --------------------------------------------------------------------------- */
+.hero {
+  background-image: url("/dist/assets/backgrounds/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw; }
