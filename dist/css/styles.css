@@ -23,10 +23,17 @@ body {
   font-size: 12px;
   line-height: 35px;
   font-weight: 400;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  background: #080808;
+  color: #B4B4B4; }
 
 img {
   max-width: 100%; }
 
 /* HEADERS
 --------------------------------------------------------------------------- */
+h1, h3, h4 {
+  font-family: Orpheus Pro;
+  font-style: normal;
+  font-weight: normal;
+  color: #E7E4E0; }
