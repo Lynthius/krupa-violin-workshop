@@ -61,12 +61,6 @@ h4 {
   border: none;
   background-color: transparent; }
 
-@media only screen and (min-width: 992px) {
-  .hamburger {
-    display: none; }
-    .hamburger:focus {
-      outline: none; } }
-
 .hamburger__box {
   z-index: 999;
   display: inline-block;
