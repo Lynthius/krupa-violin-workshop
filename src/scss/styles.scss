@@ -209,6 +209,7 @@ h4 {
 
   @media screen and (min-width: 590px) {
     & {
+      justify-content: center;
       background-image: url("/dist/assets/backgrounds/hero-bg-desktop.jpg");
       background-position: right 95%;
     }
