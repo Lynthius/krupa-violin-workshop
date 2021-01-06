@@ -30,7 +30,7 @@ body {
 img {
   max-width: 100%; }
 
-/* FONTS
+/* HEADERS
 --------------------------------------------------------------------------- */
 h1,
 h2,
@@ -47,8 +47,17 @@ h4 {
   .mobile-break {
     display: none; } }
 
-.image-separator {
-  margin: 6rem 0; }
+.margin-separator {
+  margin: 3rem 0; }
+
+.decoration-separator {
+  text-align: center;
+  display: block; }
+  .decoration-separator__image {
+    margin: 6rem 0; }
+    @media screen and (min-width: 600px) {
+      .decoration-separator__image {
+        margin: 10rem 0; } }
 
 .shadow-separator {
   width: 100%;
@@ -129,6 +138,7 @@ h4 {
   display: none; }
 
 .lang-switcher {
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   width: 8.5rem;
@@ -195,12 +205,36 @@ h4 {
 /* SECTIONS
 --------------------------------------------------------------------------- */
 .workshop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0 3.4rem; }
+  @media screen and (min-width: 590px) {
+    .workshop {
+      padding: 0 6.4rem; } }
+  .workshop__header {
+    width: 30rem; }
+    @media screen and (min-width: 590px) {
+      .workshop__header {
+        width: 50rem; } }
   .workshop__title {
+    position: relative;
     font-size: 5.6rem;
     letter-spacing: 0.04em;
     text-align: center;
     margin-bottom: 0; }
+    @media screen and (min-width: 590px) {
+      .workshop__title {
+        text-align: left; } }
+    .workshop__title::before {
+      content: "Pracownia";
+      top: -4rem;
+      left: -40rem;
+      color: rgba(255, 255, 255, 0.03);
+      letter-spacing: 0.04em;
+      font-size: 12rem;
+      position: absolute;
+      width: 4.5rem; }
   .workshop__subtitle {
     text-align: right;
     font-style: italic;
@@ -209,6 +243,9 @@ h4 {
     line-height: 3.2rem;
     letter-spacing: 0.04em;
     color: #EED4B2; }
+    @media screen and (min-width: 590px) {
+      .workshop__subtitle {
+        text-align: center; } }
     .workshop__subtitle::before {
       content: "";
       background-color: #515151;
@@ -218,8 +255,19 @@ h4 {
       vertical-align: middle;
       width: 8.2rem;
       margin-right: 3rem; }
+    @media screen and (min-width: 590px) {
+      .workshop__subtitle::after {
+        content: "";
+        background-color: #515151;
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 8.2rem;
+        margin-left: 3rem; } }
   .workshop__paragraph {
     text-align: center;
     text-transform: uppercase;
     line-height: 2.7rem;
+    letter-spacing: 0.2em;
     margin-top: 4rem; }
