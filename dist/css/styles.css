@@ -41,6 +41,12 @@ h4 {
   font-weight: normal;
   color: #E7E4E0; }
 
+a {
+  font-family: 'orpheuspro', serif;
+  text-decoration: none;
+  letter-spacing: 0.12em;
+  color: #EED4B2; }
+
 /* SEPARATORS AND BREAKS
 --------------------------------------------------------------------------- */
 @media screen and (min-width: 600px) {
@@ -49,6 +55,9 @@ h4 {
 
 .margin-separator {
   margin: 3rem 0; }
+  @media screen and (min-width: 600px) {
+    .margin-separator {
+      margin: 10rem 0; } }
 
 .decoration-separator {
   text-align: center;
@@ -211,7 +220,7 @@ h4 {
   padding: 0 3.4rem; }
   @media screen and (min-width: 590px) {
     .workshop {
-      padding: 0 6.4rem; } }
+      padding: 0 9.4rem; } }
   .workshop__header {
     width: 30rem; }
     @media screen and (min-width: 590px) {
@@ -233,8 +242,8 @@ h4 {
       color: rgba(255, 255, 255, 0.03);
       letter-spacing: 0.04em;
       font-size: 12rem;
-      position: absolute;
-      width: 4.5rem; }
+      font-style: italic;
+      position: absolute; }
   .workshop__subtitle {
     text-align: right;
     font-style: italic;
@@ -271,3 +280,67 @@ h4 {
     line-height: 2.7rem;
     letter-spacing: 0.2em;
     margin-top: 4rem; }
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3.4rem; }
+  @media screen and (min-width: 590px) {
+    .about-us {
+      padding: 0 9.4rem; } }
+  .about-us__title {
+    position: relative;
+    font-size: 5.6rem;
+    letter-spacing: 0.04em;
+    text-align: right;
+    margin-bottom: 0; }
+    .about-us__title::before {
+      content: "O\00a0nas";
+      top: 3rem;
+      right: -7rem;
+      color: rgba(255, 255, 255, 0.03);
+      letter-spacing: 0.04em;
+      font-style: italic;
+      font-size: 12rem;
+      position: absolute; }
+  .about-us__article {
+    margin-top: 6rem; }
+
+.article__title {
+  font-size: 3.2rem;
+  letter-spacing: 0.04em;
+  color: #EED4B2; }
+
+.article__paragraph {
+  text-transform: uppercase;
+  line-height: 2.7rem;
+  letter-spacing: 0.2em;
+  margin-top: 4rem;
+  color: #B4B4B4; }
+
+.article__more {
+  font-size: 20px;
+  position: absolute;
+  margin: 0 auto; }
+  .article__more::before {
+    content: "";
+    background-color: #515151;
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 8.2rem;
+    margin-right: 2rem; }
+
+.article__gallery {
+  margin-top: 12rem; }
+
+.article__image {
+  margin-top: 3rem;
+  font-weight: 350;
+  font-size: 12px;
+  text-align: right;
+  letter-spacing: 0.2em;
+  line-height: 2;
+  text-transform: uppercase;
+  color: #B4B4B4; }
