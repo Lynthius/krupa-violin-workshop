@@ -217,7 +217,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 3.4rem; }
+  padding: 0 3.4rem;
+  overflow: hidden; }
   @media screen and (min-width: 590px) {
     .workshop {
       padding: 0 9.4rem; } }
@@ -284,7 +285,8 @@ a {
 .about-us {
   display: flex;
   flex-direction: column;
-  padding: 0 3.4rem; }
+  padding: 0 3.4rem;
+  overflow: hidden; }
   @media screen and (min-width: 590px) {
     .about-us {
       padding: 0 9.4rem; } }
