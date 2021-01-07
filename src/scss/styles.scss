@@ -267,12 +267,12 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 3.4rem;
+  padding: 2rem 3.4rem;
   overflow: hidden;
 
   @media screen and (min-width: 590px) {
     & {
-      padding: 0 9.4rem;
+      padding: 2rem 9.4rem;
     }
   }
 
@@ -363,12 +363,12 @@ a {
 .about-us {
   display: flex;
   flex-direction: column;
-  padding: 0 3.4rem;
+  padding: 2rem 3.4rem;
   overflow: hidden;
 
   @media screen and (min-width: 590px) {
     & {
-      padding: 0 9.4rem;
+      padding: 2rem 9.4rem;
     }
   }
 
@@ -447,12 +447,12 @@ a {
 .offer {
   display: flex;
   flex-direction: column;
-  padding: 0 3.4rem;
+  padding: 2rem 3.4rem;
   overflow: hidden;
 
   @media screen and (min-width: 590px) {
     & {
-      padding: 0 9.4rem;
+      padding: 2rem 9.4rem;
     }
   }
 
@@ -523,5 +523,88 @@ a {
     line-height: 2;
     text-transform: uppercase;
     color: #B4B4B4;
+  }
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3.4rem;
+  overflow: hidden;
+
+  @media screen and (min-width: 590px) {
+    & {
+      padding: 2rem 9.4rem;
+    }
+  }
+
+  &__title {
+    position: relative;
+    font-size: 5.6rem;
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin-bottom: 0;
+
+    &::before {
+      content: "Galeria";
+      top: -4rem;
+      right: -24rem;
+      color: rgba(255, 255, 255, 0.03);
+      letter-spacing: 0.04em;
+      font-style: italic;
+      font-size: 12rem;
+      position: absolute;
+    }
+  }
+
+  &__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.8rem;
+    letter-spacing: 0.12em;
+    color: #EED4B2;
+  }
+
+  &__paragraph {
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2.7rem;
+    letter-spacing: 0.2em;
+    margin-top: 4rem;
+    color: #B4B4B4;
+    text-align: center;
+  }
+
+  &__btns button {
+    background-color: transparent;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 350;
+    font-size: 1.2rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #EED4B2;
+  }
+
+  &__btns-status {
+    color: #EED4B2;
+    letter-spacing: 0.2em;
+  }
+
+  &__more {
+    font-size: 20px;
+    text-align: right;
+
+    &::before {
+      content: "";
+      background-color: #515151;
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 8.2rem;
+      margin-right: 2rem;
+    }
   }
 }
