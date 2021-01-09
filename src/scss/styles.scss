@@ -596,6 +596,10 @@ a {
       font-style: italic;
       font-size: 12rem;
       position: absolute;
+
+      @media screen and (min-width: 590px) {
+      right: 28rem;
+      }
     }
   }
 

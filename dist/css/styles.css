@@ -463,6 +463,9 @@ a {
       font-style: italic;
       font-size: 12rem;
       position: absolute; }
+      @media screen and (min-width: 590px) {
+        .offer__title::before {
+          right: 28rem; } }
   .offer__subtitle {
     font-style: normal;
     font-weight: normal;
