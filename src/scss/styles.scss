@@ -615,3 +615,50 @@ a {
     }
   }
 }
+
+.krupa {
+  padding: 2rem 3.4rem;
+  overflow: hidden;
+
+  @media screen and (min-width: 590px) {
+    & {
+      padding: 2rem 9.4rem;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10rem;
+  }
+  
+  &__list {
+    font-size: 1.7rem;
+    text-align: right;
+    letter-spacing: 0.2em;
+    text-transform: capitalize;
+    padding: 0;
+  }
+  
+  &__item a {
+    color: #E7E4E0;
+  }
+  
+  &__title {
+    font-size: 6.5rem;
+    letter-spacing: 0.04em;
+    line-height: 5.4rem;
+    padding-left: 2.4rem;
+    color: #EED4B2;
+    border-left: .4px solid #EED4B2;
+  }
+  
+  &__subtitle {
+    text-align: center;
+    font-size: 12.7px;
+    letter-spacing: 0.27em;
+    text-transform: uppercase;
+    color: #E7E4E0;
+  }
+}
