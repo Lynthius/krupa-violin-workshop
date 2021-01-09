@@ -578,6 +578,34 @@ a {
   &__container img {
     margin-left: -3.5rem;
     margin-top: 2rem;
+
+    @media screen and (min-width: 590px) {
+      & {
+        margin-left: -9.4rem;
+        width: 60%;
+        margin-top: 12rem;
+      }
+    }
+  }
+
+  &__subcontainer {
+    @media screen and (min-width: 590px) {
+      & {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &__info {
+    @media screen and (min-width: 590px) {
+      & {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
   }
 
   &__title {
@@ -598,7 +626,7 @@ a {
       position: absolute;
 
       @media screen and (min-width: 590px) {
-      right: 28rem;
+        right: 28rem;
       }
     }
   }
@@ -624,6 +652,12 @@ a {
   &__list {
     border-left: 1px solid rgba(226, 225, 221, 0.3);
     margin: 3rem 0;
+
+    @media screen and (min-width: 590px) {
+      & {
+        margin: 3rem -2.5rem 0;
+      }
+    }
   }
 
   &__list-item {

@@ -448,6 +448,21 @@ a {
   .offer__container img {
     margin-left: -3.5rem;
     margin-top: 2rem; }
+    @media screen and (min-width: 590px) {
+      .offer__container img {
+        margin-left: -9.4rem;
+        width: 60%;
+        margin-top: 12rem; } }
+  @media screen and (min-width: 590px) {
+    .offer__subcontainer {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between; } }
+  @media screen and (min-width: 590px) {
+    .offer__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
   .offer__title {
     position: relative;
     font-size: 5.6rem;
@@ -483,6 +498,9 @@ a {
   .offer__list {
     border-left: 1px solid rgba(226, 225, 221, 0.3);
     margin: 3rem 0; }
+    @media screen and (min-width: 590px) {
+      .offer__list {
+        margin: 3rem -2.5rem 0; } }
   .offer__list-item {
     font-size: 2.8rem;
     letter-spacing: 0.12em;
