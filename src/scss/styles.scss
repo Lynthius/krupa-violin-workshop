@@ -113,6 +113,7 @@ a {
   width: 80%;
   background-color: rgba(81, 81, 81, 0.5);
 }
+
 /* NAVIGATION
 --------------------------------------------------------------------------- */
 .hamburger {
@@ -192,11 +193,48 @@ a {
 }
 
 .navigation {
+  z-index: 2;
   display: none;
+  // opacity: 1;
+  // visibility: hidden;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #080808;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: ease-in-out 0.5s;
+
+  &__list {
+    padding-top: 4.5rem;
+  }
+
+  &__item a {
+    font-size: 4.2rem;
+    line-height: 6.2rem;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  &__sublist {
+    border-left: 1px solid rgba(226, 225, 221, 0.3);
+    margin: 3rem 0;
+  }
+
+  &__subitem a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 350;
+    font-size: 1.2rem;
+    line-height: 2.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #CECECE;
+  }
 }
 
 .lang-switcher {
-  z-index: 2;
+  z-index: 3;
   display: flex;
   justify-content: space-between;
   width: 8.5rem;
@@ -512,7 +550,7 @@ a {
   }
 
   &__list {
-    border-left: .4px solid #EED4B2;
+    border-left: 1px solid rgba(226, 225, 221, 0.3);
     margin: 3rem 0;
   }
 
@@ -657,7 +695,7 @@ a {
     line-height: 5.4rem;
     padding-left: 2.4rem;
     color: #EED4B2;
-    border-left: .4px solid #EED4B2;
+    border-left: 1px solid rgba(226, 225, 221, 0.3);
   }
 
   &__subtitle {
@@ -707,6 +745,7 @@ a {
       padding: 0 9.4rem;
     }
   }
+
   & p {
     font-family: "Orpheus Pro";
     font-size: 1.2rem;

@@ -160,10 +160,37 @@ a {
   white-space: nowrap; }
 
 .navigation {
-  display: none; }
+  z-index: 2;
+  display: none;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #080808;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: ease-in-out 0.5s; }
+  .navigation__list {
+    padding-top: 4.5rem; }
+  .navigation__item a {
+    font-size: 4.2rem;
+    line-height: 6.2rem;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.8); }
+  .navigation__sublist {
+    border-left: 1px solid rgba(226, 225, 221, 0.3);
+    margin: 3rem 0; }
+  .navigation__subitem a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 350;
+    font-size: 1.2rem;
+    line-height: 2.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #CECECE; }
 
 .lang-switcher {
-  z-index: 2;
+  z-index: 3;
   display: flex;
   justify-content: space-between;
   width: 8.5rem;
@@ -404,7 +431,7 @@ a {
     margin-top: 4rem;
     color: #B4B4B4; }
   .offer__list {
-    border-left: .4px solid #EED4B2;
+    border-left: 1px solid rgba(226, 225, 221, 0.3);
     margin: 3rem 0; }
   .offer__list-item {
     font-size: 2.8rem;
@@ -511,7 +538,7 @@ a {
     line-height: 5.4rem;
     padding-left: 2.4rem;
     color: #EED4B2;
-    border-left: .4px solid #EED4B2; }
+    border-left: 1px solid rgba(226, 225, 221, 0.3); }
   .krupa__subtitle {
     text-align: center;
     font-size: 12.7px;
