@@ -349,11 +349,49 @@ a {
       font-size: 12rem;
       position: absolute; }
   .about-us__article {
-    margin-top: 6rem; }
+    position: relative;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column; }
 
 @media screen and (min-width: 590px) {
-  .article__info {
-    max-width: 70%; } }
+  .article__info--left {
+    max-width: 70%;
+    text-align: left; }
+    .article__info--left .article__paragraph {
+      margin-left: 6rem; }
+      .article__info--left .article__paragraph::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -2.5rem;
+        height: 40%;
+        width: 1px;
+        border-left: 1px solid #6C6C6C; }
+    .article__info--left .article__more {
+      position: absolute;
+      left: 0;
+      margin: 7.5rem 4rem 0; }
+  .article__info--right {
+    align-self: flex-end;
+    max-width: 70%;
+    text-align: right; }
+    .article__info--right .article__paragraph {
+      margin-right: 6rem; }
+      .article__info--right .article__paragraph::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -2.5rem;
+        height: 40%;
+        width: 1px;
+        border-left: 1px solid #6C6C6C; }
+    .article__info--right .article__more {
+      position: absolute;
+      right: 13rem;
+      margin: 7.5rem 4rem 0; } }
 
 .article__title {
   font-size: 3.2rem;
@@ -367,26 +405,11 @@ a {
   letter-spacing: 0.2em;
   margin-top: 4rem;
   color: #B4B4B4; }
-  @media screen and (min-width: 590px) {
-    .article__paragraph {
-      margin-left: 6rem; }
-    .article__paragraph::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: -2.5rem;
-      height: 40%;
-      width: 1px;
-      border-left: 1px solid #6C6C6C; } }
 
 .article__more {
   font-size: 20px;
   position: absolute;
   margin: 0 auto; }
-  @media screen and (min-width: 590px) {
-    .article__more {
-      margin: 6.5rem 4rem 0; } }
   .article__more::before {
     content: "";
     background-color: #515151;
