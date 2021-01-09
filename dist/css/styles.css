@@ -481,11 +481,11 @@ a {
       margin-right: 2rem; }
 
 .krupa {
-  padding: 2rem 3.4rem;
+  padding: 2rem 3.4rem 0;
   overflow: hidden; }
   @media screen and (min-width: 590px) {
     .krupa {
-      padding: 2rem 9.4rem; } }
+      padding: 2rem 9.4rem 0; } }
   .krupa__container {
     display: flex;
     align-items: center;
@@ -512,3 +512,22 @@ a {
     letter-spacing: 0.27em;
     text-transform: uppercase;
     color: #E7E4E0; }
+
+.contact {
+  padding: 0 3.4rem;
+  overflow: hidden; }
+  @media screen and (min-width: 590px) {
+    .contact {
+      padding: 0 9.4rem; } }
+  .contact__header {
+    font-size: 2.8rem;
+    letter-spacing: 0.12em;
+    color: #EED4B2;
+    margin-bottom: 0; }
+  .contact__address {
+    font-weight: 350;
+    font-size: 1.2rem;
+    line-height: 2.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #B4B4B4; }

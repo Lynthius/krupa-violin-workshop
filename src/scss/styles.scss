@@ -617,12 +617,12 @@ a {
 }
 
 .krupa {
-  padding: 2rem 3.4rem;
+  padding: 2rem 3.4rem 0;
   overflow: hidden;
 
   @media screen and (min-width: 590px) {
     & {
-      padding: 2rem 9.4rem;
+      padding: 2rem 9.4rem 0;
     }
   }
 
@@ -632,7 +632,7 @@ a {
     justify-content: space-between;
     height: 10rem;
   }
-  
+
   &__list {
     font-size: 1.7rem;
     text-align: right;
@@ -640,11 +640,11 @@ a {
     text-transform: capitalize;
     padding: 0;
   }
-  
+
   &__item a {
     color: #E7E4E0;
   }
-  
+
   &__title {
     font-size: 6.5rem;
     letter-spacing: 0.04em;
@@ -653,12 +653,39 @@ a {
     color: #EED4B2;
     border-left: .4px solid #EED4B2;
   }
-  
+
   &__subtitle {
     text-align: center;
     font-size: 12.7px;
     letter-spacing: 0.27em;
     text-transform: uppercase;
     color: #E7E4E0;
+  }
+}
+
+.contact {
+  padding: 0 3.4rem;
+  overflow: hidden;
+
+  @media screen and (min-width: 590px) {
+    & {
+      padding: 0 9.4rem;
+    }
+  }
+
+  &__header {
+    font-size: 2.8rem;
+    letter-spacing: 0.12em;
+    color: #EED4B2;
+    margin-bottom: 0;
+  }
+
+  &__address {
+    font-weight: 350;
+    font-size: 1.2rem;
+    line-height: 2.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #B4B4B4;
   }
 }
