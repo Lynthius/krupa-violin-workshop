@@ -80,7 +80,13 @@ a {
   position: relative;
   box-shadow: 0px 5px 12px 3px #080808, 0px -5px 12px 3px #080808; }
 
-.hr-separator {
+.hr-separator-full {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(81, 81, 81, 0.5); }
+
+.hr-separator-80 {
   border: 0;
   height: 1px;
   width: 80%;
@@ -531,3 +537,18 @@ a {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #B4B4B4; }
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3.4rem;
+  overflow: hidden; }
+  @media screen and (min-width: 590px) {
+    .copyright {
+      padding: 0 9.4rem; } }
+  .copyright p {
+    font-family: "Orpheus Pro";
+    font-size: 1.2rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.2em;
+    color: rgba(206, 206, 206, 0.6); }
