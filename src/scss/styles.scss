@@ -642,7 +642,7 @@ a {
   &__header {
     width: 30rem;
     align-self: center;
-    
+
     @media screen and (min-width: 590px) {
       & {
         width: 50rem;
@@ -737,6 +737,18 @@ a {
     }
   }
 
+  &__header {
+    width: 30rem;
+    align-self: center;
+
+    @media screen and (min-width: 590px) {
+      & {
+        width: 50rem;
+        margin-bottom: 6rem;
+      }
+    }
+  }
+
   &__title {
     position: relative;
     font-size: 5.6rem;
@@ -753,6 +765,10 @@ a {
       font-style: italic;
       font-size: 12rem;
       position: absolute;
+
+      @media screen and (min-width: 590px) {
+        left: 18rem;
+      }
     }
   }
 
@@ -773,6 +789,16 @@ a {
     margin-top: 4rem;
     color: #B4B4B4;
     text-align: center;
+  }
+
+  &__slider-container {
+    margin-top: 4rem;
+
+    @media screen and (min-width: 590px) {
+      & {
+        margin-top: 8rem;
+      }
+    }
   }
 
   &__btns button {
@@ -809,19 +835,44 @@ a {
 }
 
 .krupa {
+  display: flex;
+  flex-direction: column;
   padding: 2rem 3.4rem 0;
   overflow: hidden;
 
   @media screen and (min-width: 590px) {
     & {
-      padding: 2rem 9.4rem 0;
+      padding: 8rem 30.4rem 0;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 590px) {
+      & {
+        flex-direction: row;
+        justify-content: space-between;
+      }
     }
   }
 
   &__container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+
+    @media screen and (min-width: 590px) {
+      & {
+        align-items: flex-start;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
     height: 10rem;
   }
 
@@ -831,6 +882,7 @@ a {
     letter-spacing: 0.2em;
     text-transform: capitalize;
     padding: 0;
+    margin-right: 2.4rem;
   }
 
   &__item a {
@@ -852,19 +904,16 @@ a {
     letter-spacing: 0.27em;
     text-transform: uppercase;
     color: #E7E4E0;
+
+    @media screen and (min-width: 590px) {
+      & {
+        text-align: left;
+      }
+    }
   }
 }
 
 .contact {
-  padding: 0 3.4rem;
-  overflow: hidden;
-
-  @media screen and (min-width: 590px) {
-    & {
-      padding: 0 9.4rem;
-    }
-  }
-
   &__header {
     font-size: 2.8rem;
     letter-spacing: 0.12em;
@@ -890,7 +939,7 @@ a {
 
   @media screen and (min-width: 590px) {
     & {
-      padding: 0 9.4rem;
+      padding: 8rem 30.4rem 0;
     }
   }
 

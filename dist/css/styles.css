@@ -550,6 +550,13 @@ a {
   @media screen and (min-width: 590px) {
     .gallery {
       padding: 2rem 9.4rem; } }
+  .gallery__header {
+    width: 30rem;
+    align-self: center; }
+    @media screen and (min-width: 590px) {
+      .gallery__header {
+        width: 50rem;
+        margin-bottom: 6rem; } }
   .gallery__title {
     position: relative;
     font-size: 5.6rem;
@@ -565,6 +572,9 @@ a {
       font-style: italic;
       font-size: 12rem;
       position: absolute; }
+      @media screen and (min-width: 590px) {
+        .gallery__title::before {
+          left: 18rem; } }
   .gallery__subtitle {
     font-style: normal;
     font-weight: normal;
@@ -580,6 +590,11 @@ a {
     margin-top: 4rem;
     color: #B4B4B4;
     text-align: center; }
+  .gallery__slider-container {
+    margin-top: 4rem; }
+    @media screen and (min-width: 590px) {
+      .gallery__slider-container {
+        margin-top: 8rem; } }
   .gallery__btns button {
     background-color: transparent;
     border: none;
@@ -606,22 +621,38 @@ a {
       margin-right: 2rem; }
 
 .krupa {
+  display: flex;
+  flex-direction: column;
   padding: 2rem 3.4rem 0;
   overflow: hidden; }
   @media screen and (min-width: 590px) {
     .krupa {
-      padding: 2rem 9.4rem 0; } }
+      padding: 8rem 30.4rem 0; } }
+  .krupa__footer {
+    display: flex;
+    flex-direction: column; }
+    @media screen and (min-width: 590px) {
+      .krupa__footer {
+        flex-direction: row;
+        justify-content: space-between; } }
   .krupa__container {
     display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media screen and (min-width: 590px) {
+      .krupa__container {
+        align-items: flex-start; } }
+  .krupa__info {
+    display: flex;
     align-items: center;
-    justify-content: space-between;
     height: 10rem; }
   .krupa__list {
     font-size: 1.7rem;
     text-align: right;
     letter-spacing: 0.2em;
     text-transform: capitalize;
-    padding: 0; }
+    padding: 0;
+    margin-right: 2.4rem; }
   .krupa__item a {
     color: #E7E4E0; }
   .krupa__title {
@@ -637,25 +668,23 @@ a {
     letter-spacing: 0.27em;
     text-transform: uppercase;
     color: #E7E4E0; }
+    @media screen and (min-width: 590px) {
+      .krupa__subtitle {
+        text-align: left; } }
 
-.contact {
-  padding: 0 3.4rem;
-  overflow: hidden; }
-  @media screen and (min-width: 590px) {
-    .contact {
-      padding: 0 9.4rem; } }
-  .contact__header {
-    font-size: 2.8rem;
-    letter-spacing: 0.12em;
-    color: #EED4B2;
-    margin-bottom: 0; }
-  .contact__address {
-    font-weight: 350;
-    font-size: 1.2rem;
-    line-height: 2.7rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #B4B4B4; }
+.contact__header {
+  font-size: 2.8rem;
+  letter-spacing: 0.12em;
+  color: #EED4B2;
+  margin-bottom: 0; }
+
+.contact__address {
+  font-weight: 350;
+  font-size: 1.2rem;
+  line-height: 2.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #B4B4B4; }
 
 .copyright {
   display: flex;
@@ -664,7 +693,7 @@ a {
   overflow: hidden; }
   @media screen and (min-width: 590px) {
     .copyright {
-      padding: 0 9.4rem; } }
+      padding: 8rem 30.4rem 0; } }
   .copyright p {
     font-family: "Orpheus Pro";
     font-size: 1.2rem;
