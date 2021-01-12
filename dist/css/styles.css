@@ -175,6 +175,11 @@ a {
   top: 0;
   right: 0;
   transition: ease-in-out 0.5s; }
+  .navigation__contact {
+    display: none; }
+    @media screen and (min-width: 590px) {
+      .navigation__contact {
+        display: block; } }
   .navigation__list {
     padding-top: 3.5rem; }
     @media screen and (min-width: 590px) {

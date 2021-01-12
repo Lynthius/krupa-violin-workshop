@@ -214,6 +214,16 @@ a {
   right: 0;
   transition: ease-in-out 0.5s;
 
+  &__contact {
+    display: none;
+
+    @media screen and (min-width: 590px) {
+      & {
+        display: block;
+      }
+    }
+  }
+
   &__list {
     padding-top: 3.5rem;
 
