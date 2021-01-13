@@ -166,7 +166,7 @@ a {
 
 .navigation {
   z-index: 2;
-  display: none;
+  display: flex;
   visibility: hidden;
   align-items: center;
   justify-content: space-between;
@@ -175,8 +175,13 @@ a {
   background-color: #080808;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100vw;
   transition: ease-in-out 0.5s; }
+  .navigation--active {
+    opacity: 1;
+    visibility: visible;
+    right: 0;
+    transition: ease-in-out 0.5s; }
   .navigation__contact {
     display: none; }
     @media screen and (min-width: 590px) {
