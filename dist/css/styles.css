@@ -299,15 +299,20 @@ a {
 
 /* SECTIONS
 --------------------------------------------------------------------------- */
+section {
+  padding: 2rem 3.4rem; }
+  @media screen and (min-width: 590px) and (max-width: 1799px) {
+    section {
+      padding: 2rem 9.4rem; } }
+  @media screen and (min-width: 1800px) {
+    section {
+      padding: 2rem 34.4rem; } }
+
 .workshop {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 3.4rem;
   overflow: hidden; }
-  @media screen and (min-width: 590px) {
-    .workshop {
-      padding: 2rem 9.4rem; } }
   .workshop__header {
     width: 30rem; }
     @media screen and (min-width: 590px) {
@@ -371,11 +376,7 @@ a {
 .about-us {
   display: flex;
   flex-direction: column;
-  padding: 2rem 3.4rem;
   overflow: hidden; }
-  @media screen and (min-width: 590px) {
-    .about-us {
-      padding: 2rem 16.4rem; } }
   .about-us__title {
     position: relative;
     font-size: 5.6rem;
@@ -483,11 +484,7 @@ a {
 .offer {
   display: flex;
   flex-direction: column;
-  padding: 2rem 3.4rem;
   overflow: hidden; }
-  @media screen and (min-width: 590px) {
-    .offer {
-      padding: 2rem 9.4rem; } }
   .offer__container img {
     margin-left: -3.5rem;
     margin-top: 2rem; }
@@ -583,11 +580,7 @@ a {
 .gallery {
   display: flex;
   flex-direction: column;
-  padding: 2rem 3.4rem;
   overflow: hidden; }
-  @media screen and (min-width: 590px) {
-    .gallery {
-      padding: 2rem 9.4rem; } }
   .gallery__header {
     width: 30rem;
     align-self: center; }

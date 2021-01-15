@@ -373,18 +373,32 @@ a {
 
 /* SECTIONS
 --------------------------------------------------------------------------- */
-.workshop {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+section {
   padding: 2rem 3.4rem;
-  overflow: hidden;
-
-  @media screen and (min-width: 590px) {
+  @media screen and (min-width: 590px) and (max-width: 1799px) {
     & {
       padding: 2rem 9.4rem;
     }
   }
+  @media screen and (min-width: 1800px) {
+    & {
+      padding: 2rem 34.4rem;
+    }
+  }
+}
+
+.workshop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // padding: 2rem 3.4rem;
+  overflow: hidden;
+
+  // @media screen and (min-width: 590px) {
+  //   & {
+  //     padding: 2rem 9.4rem;
+  //   }
+  // }
 
   &__header {
     width: 30rem;
@@ -473,14 +487,14 @@ a {
 .about-us {
   display: flex;
   flex-direction: column;
-  padding: 2rem 3.4rem;
+  // padding: 2rem 3.4rem;
   overflow: hidden;
 
-  @media screen and (min-width: 590px) {
-    & {
-      padding: 2rem 16.4rem;
-    }
-  }
+  // @media screen and (min-width: 590px) {
+  //   & {
+  //     padding: 2rem 16.4rem;
+  //   }
+  // }
 
   &__title {
     position: relative;
@@ -625,14 +639,14 @@ a {
 .offer {
   display: flex;
   flex-direction: column;
-  padding: 2rem 3.4rem;
+  // padding: 2rem 3.4rem;
   overflow: hidden;
 
-  @media screen and (min-width: 590px) {
-    & {
-      padding: 2rem 9.4rem;
-    }
-  }
+  // @media screen and (min-width: 590px) {
+  //   & {
+  //     padding: 2rem 9.4rem;
+  //   }
+  // }
 
   &__container img {
     margin-left: -3.5rem;
@@ -779,14 +793,14 @@ a {
 .gallery {
   display: flex;
   flex-direction: column;
-  padding: 2rem 3.4rem;
+  // padding: 2rem 3.4rem;
   overflow: hidden;
 
-  @media screen and (min-width: 590px) {
-    & {
-      padding: 2rem 9.4rem;
-    }
-  }
+  // @media screen and (min-width: 590px) {
+  //   & {
+  //     padding: 2rem 9.4rem;
+  //   }
+  // }
 
   &__header {
     width: 30rem;
