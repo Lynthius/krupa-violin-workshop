@@ -3,8 +3,9 @@ var prependNumber = 1;
 
 const swiper = new Swiper('.swiper-container', {
   slidesPerView: 4,
-  centeredSlides: true,
-  spaceBetween: 40,
+  centeredSlides: false,
+  loop: true,
+  spaceBetween: 50,
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',

@@ -622,10 +622,10 @@ section {
     color: #B4B4B4;
     text-align: center; }
   .gallery__slider-container {
-    margin-top: 4rem; }
+    margin-top: 6rem; }
     @media screen and (min-width: 590px) {
       .gallery__slider-container {
-        margin-top: 8rem; } }
+        margin-top: 14rem; } }
   .gallery__btns button {
     background-color: transparent;
     border: none;
@@ -640,7 +640,9 @@ section {
     letter-spacing: 0.2em; }
   .gallery__more {
     font-size: 20px;
-    text-align: right; }
+    text-align: right;
+    margin-top: 5rem;
+    margin-right: 6.6rem; }
     .gallery__more::before {
       content: "";
       background-color: #515151;
