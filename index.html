@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Krupa - violin and bow making workshop</title>
   <link rel="stylesheet" href="dist/css/styles.css">
+  <link rel="stylesheet" href="dist/css/swiper.css">
   <link rel="stylesheet" href="https://use.typekit.net/uvu1eoi.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
@@ -234,13 +235,23 @@
         a first evaluation together with our design office
       </p>
       <div class="gallery__slider-container">
-        <div class="gallery__btns">
-          <button class="left-btn">&lt;</button>
-          <span class="gallery__btns-status">01 / 06</span>
-          <button class="right-btn">&gt;</button>
-        </div>
-        <div class="gallery__slide">
-          <img src="dist/assets/images/violin.jpg" alt="">
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="dist/assets/images/violin.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="dist/assets/images/violin.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="dist/assets/images/violin.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="dist/assets/images/violin.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="dist/assets/images/violin.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="dist/assets/images/violin.jpg" alt=""></div>
+          </div>
+          <!-- Add Pagination -->
+          <div>
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
         </div>
       </div>
       <a href="#" class="gallery__more">więcej</a>
@@ -279,6 +290,8 @@
     </div>
   </footer>
   <script src="src/js/main.js"></script>
+  <script src="/packkage/swiper-bundle.js"></script>
+  <script src="src/js/swiper.js"></script>
 </body>
 
 </html>
