@@ -32,18 +32,26 @@
 }
 
 .swiper-navigators {
-  position: absolute;
-  top: -50px;
-  right: 530px;
   display: flex;
-  align-self: flex-end;
-  width: 100px;
   font-family: 'Nunito', sans-serif;
   font-weight: 350;
   font-size: 1.2rem;
   letter-spacing: 0.2em;
+  width: 100px;
   text-transform: uppercase;
+  align-self: flex-start;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
   color: #EED4B2;
+
+  @media screen and (min-width: 590px) {
+    & {
+      position: absolute;
+      top: -50px;
+      right: 718px;
+      align-self: flex-end;
+    }
+  }
 }
 
 .swiper-button-prev,
@@ -151,15 +159,37 @@
   display: flex;
   justify-content: center;
   align-self: center;
-  padding: 10px;
   transition: .1s ease-in-out;
   filter: brightness(50%);
+
+  @media screen and (min-width: 590px) {
+    & {
+      flex-shrink: 0;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transition-property: transform;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      transition: .1s ease-in-out;
+      filter: brightness(50%);
+    }
+  }
 }
 
 .swiper-slide-active {
   overflow: hidden;
-  font-size: 30px;
-  transform: scale(1.4);
-  padding: 0 46px;
   filter: brightness(100%);
+
+  @media screen and (min-width: 590px) {
+    & {
+      overflow: hidden;
+      font-size: 30px;
+      transform: scale(1.4);
+      padding: 0 46px;
+      filter: brightness(100%);
+    }
+  }
 }
