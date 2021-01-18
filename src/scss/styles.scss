@@ -124,6 +124,22 @@ a {
 
 /* NAVIGATION
 --------------------------------------------------------------------------- */
+.nav-container {
+  z-index: 2;
+  position: fixed;
+  background-color:#080808;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10.3rem;
+
+  @media screen and (min-width: 590px) {
+    & {
+      background-color: transparent;
+    }
+  }
+}
+
 .hamburger {
   display: inline-block;
   cursor: pointer;
@@ -134,7 +150,7 @@ a {
 }
 
 .hamburger__box {
-  z-index: 999;
+  z-index: 4;
   display: inline-block;
   position: fixed;
   top: 3.8rem;
@@ -375,11 +391,13 @@ a {
 --------------------------------------------------------------------------- */
 section {
   padding: 2rem 3.4rem;
+
   @media screen and (min-width: 590px) and (max-width: 1799px) {
     & {
       padding: 2rem 12.4rem;
     }
   }
+
   @media screen and (min-width: 1800px) {
     & {
       padding: 2rem 34.4rem;
@@ -1018,4 +1036,3 @@ section {
     color: rgba(206, 206, 206, 0.6);
   }
 }
-

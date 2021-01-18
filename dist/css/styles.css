@@ -99,6 +99,18 @@ a {
 
 /* NAVIGATION
 --------------------------------------------------------------------------- */
+.nav-container {
+  z-index: 2;
+  position: fixed;
+  background-color: #080808;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10.3rem; }
+  @media screen and (min-width: 590px) {
+    .nav-container {
+      background-color: transparent; } }
+
 .hamburger {
   display: inline-block;
   cursor: pointer;
@@ -108,7 +120,7 @@ a {
   background-color: transparent; }
 
 .hamburger__box {
-  z-index: 999;
+  z-index: 4;
   display: inline-block;
   position: fixed;
   top: 3.8rem;
