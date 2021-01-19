@@ -492,6 +492,11 @@ section {
   line-height: 2;
   text-transform: uppercase;
   color: #B4B4B4; }
+  @media screen and (min-width: 590px) {
+    .article__image--upper {
+      margin-top: -2rem; }
+    .article__image img {
+      height: 70rem; } }
 
 .offer {
   display: flex;
@@ -509,7 +514,8 @@ section {
   .offer__image img {
     margin-left: 0;
     margin-top: 6rem;
-    max-width: 100%; }
+    max-width: 100%;
+    min-height: 50rem; }
   @media screen and (min-width: 590px) {
     .offer__subcontainer--reverse {
       display: flex;
