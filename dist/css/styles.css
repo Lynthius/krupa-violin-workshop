@@ -293,6 +293,7 @@ a {
       justify-content: center;
       background-position: right 95%; } }
   .hero__slider {
+    margin: auto 0;
     padding-bottom: 12rem; }
   .hero__title {
     font-weight: normal;
@@ -753,8 +754,6 @@ section {
 
 .swiper-slide-hero-1 {
   text-align: center;
-  font-size: 18px;
-  /* Center slide text vertically */
   background-image: url("/dist/assets/backgrounds/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -764,6 +763,36 @@ section {
   width: 100vw; }
   @media screen and (min-width: 590px) {
     .swiper-slide-hero-1 {
+      justify-content: center;
+      background-image: url("/dist/assets/backgrounds/hero-bg-desktop.jpg");
+      background-position: right 95%; } }
+
+.swiper-slide-hero-2 {
+  text-align: center;
+  background-image: url("/dist/assets/backgrounds/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: bottom;
+  height: 100vh;
+  width: 100vw; }
+  @media screen and (min-width: 590px) {
+    .swiper-slide-hero-2 {
+      justify-content: center;
+      background-image: url("/dist/assets/backgrounds/hero-bg-desktop.jpg");
+      background-position: right 95%; } }
+
+.swiper-slide-hero-3 {
+  text-align: center;
+  background-image: url("/dist/assets/backgrounds/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: bottom;
+  height: 100vh;
+  width: 100vw; }
+  @media screen and (min-width: 590px) {
+    .swiper-slide-hero-3 {
       justify-content: center;
       background-image: url("/dist/assets/backgrounds/hero-bg-desktop.jpg");
       background-position: right 95%; } }

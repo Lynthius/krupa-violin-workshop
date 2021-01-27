@@ -1,5 +1,5 @@
  :root {
-   --swiper-theme-color: #ffffff;
+   --swiper-theme-color: #E7E4E0;
  }
 
  .swiper-container {
@@ -137,12 +137,11 @@
  }
 
  .swiper-pagination-bullet {
-   width: 8px;
-   height: 8px;
+   width: 10px;
+   height: 10px;
    display: inline-block;
    border-radius: 100%;
-   background: rgb(255, 255, 255);
-   opacity: 0.2;
+   border: 1px solid rgba(196, 196, 196, 0.5);
  }
 
  button.swiper-pagination-bullet {
