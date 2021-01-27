@@ -9,7 +9,13 @@
   position: relative;
   list-style: none;
   padding: 0;
-  z-index: 1; }
+  z-index: 1;
+  width: 100%;
+  height: 100%; }
+  .swiper-container__hero {
+    margin: 0;
+    width: 100vw;
+    height: 100vh; }
 
 .swiper-wrapper {
   position: relative;
@@ -79,7 +85,7 @@
   text-transform: uppercase;
   color: #EED4B2; }
 
-.swiper-pagination--gallery {
+.swiper-pagination__gallery {
   font-family: 'Nunito', sans-serif;
   font-size: 14px;
   letter-spacing: 0.2em;
@@ -88,7 +94,7 @@
   transform: translate3d(0, 0, 0);
   z-index: 10; }
 
-.swiper-pagination--hero {
+.swiper-pagination__hero {
   position: absolute;
   text-align: center;
   transition: 300ms opacity;

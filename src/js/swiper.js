@@ -1,17 +1,18 @@
 var appendNumber = 4;
 var prependNumber = 1;
 
-var swiperHero = new Swiper(".swiper-container--hero", {
+var swiperHero = new Swiper(".swiper-container__hero", {
   centeredSlides: true,
+  // slidesPerView: 1,
+  spaceBetween: 0,
   pagination: {
-    el: ".swiper-pagination--hero",
+    el: ".swiper-pagination__hero",
     dynamicBullets: true,
-    slidesPerView: 1,
   },
   loop: true,
 });
 
-const swiperGallery = new Swiper(".swiper-container", {
+const swiperGallery = new Swiper(".swiper-container__gallery", {
   slidesPerView: 1,
   spaceBetween: 10,
   centeredSlides: true,
@@ -21,7 +22,7 @@ const swiperGallery = new Swiper(".swiper-container", {
     prevEl: ".swiper-button-prev",
   },
   pagination: {
-    el: ".swiper-pagination--gallery",
+    el: ".swiper-pagination__gallery",
     type: "fraction",
   },
   breakpoints: {

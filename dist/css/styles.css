@@ -286,7 +286,8 @@ a {
   background-size: cover;
   background-position-x: right;
   background-position-y: bottom;
-  height: 100vh; }
+  height: 100vh;
+  overflow: hidden; }
   @media screen and (min-width: 590px) {
     .hero {
       justify-content: center;
@@ -750,14 +751,6 @@ section {
     letter-spacing: 0.2em;
     color: rgba(206, 206, 206, 0.6); }
 
-.swiper-container--hero {
-  width: 100%;
-  height: 100%; }
-
-.swiper-container {
-  width: 100%;
-  height: 100%; }
-
 .swiper-slide-hero-1 {
   text-align: center;
   font-size: 18px;
@@ -767,7 +760,8 @@ section {
   background-size: cover;
   background-position-x: right;
   background-position-y: bottom;
-  height: 100vh; }
+  height: 100vh;
+  width: 100vw; }
   @media screen and (min-width: 590px) {
     .swiper-slide-hero-1 {
       justify-content: center;

@@ -356,6 +356,7 @@ a {
   background-position-x: right;
   background-position-y: bottom;
   height: 100vh;
+  overflow: hidden;
 
   @media screen and (min-width: 590px) {
     & {
@@ -1050,16 +1051,6 @@ section {
   }
 }
 
-.swiper-container--hero {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
 .swiper-slide-hero-1 {
   text-align: center;
   font-size: 18px;
@@ -1077,7 +1068,7 @@ section {
   background-position-x: right;
   background-position-y: bottom;
   height: 100vh;
-  // width: 100vw;
+  width: 100vw;
 
   @media screen and (min-width: 590px) {
     & {
