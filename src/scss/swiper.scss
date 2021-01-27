@@ -48,10 +48,15 @@
      & {
        position: absolute;
        top: -50px;
-       right: 718px;
+       right: 58%;
        align-self: flex-end;
      }
    }
+   @media screen and (max-width: 1490px) {
+    & {
+      right: 55.5%;
+    }
+  }
  }
 
  .swiper-button-prev,

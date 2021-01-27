@@ -23,7 +23,7 @@ const swiperHero = new Swiper(".swiper-container__hero", {
 
 const swiperGallery = new Swiper(".swiper-container__gallery", {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 30,
   centeredSlides: true,
   loop: true,
   navigation: {
