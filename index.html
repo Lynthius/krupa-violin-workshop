@@ -15,6 +15,17 @@
 <body>
   <main>
     <section class="hero">
+      <div class="swiper-container swiper-container--hero">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide-hero-1">Krupa</div>
+          <div class="swiper-slide swiper-slide-hero-2">Slide 2</div>
+          <div class="swiper-slide swiper-slide-hero-3">Slide 3</div>
+          <div class="swiper-slide swiper-slide-hero-4">Slide 4</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination--hero"></div>
+      </div>
+
       <header class="hero__header">
         <div class="lang-switcher">
           <button class="lang-switcher__btn--pl" lang="pl" hreflang="pl">PL</button>
@@ -56,10 +67,10 @@
             </div>
           </div>
         </nav>
-        <div class="hero__slider">
+        <!-- <div class="hero__slider">
           <h1 class="hero__title">Krupa</h1>
           <h2 class="hero__subtitle">Violin & Bow Making <br class="mobile-break"> Workshop</h2>
-        </div>
+        </div> -->
       </header>
     </section>
     <div class="shadow-separator"></div>
@@ -111,7 +122,9 @@
         <div class="article__info--right">
           <h3 class="article__title">Marcin Krupa</h3>
           <p class="article__paragraph">
-            Urodziłem się 28 lipca 1977 r. W 1996 r. ukończyłem Państwowe Liceum Muzyczne im. M. Karłowicza w Poznaniu w klasie lutnictwa. W 2002 r. uzyskałem dyplom i tytuł magistra sztuki w dziedzinie lutnictwo artystyczne na Akademii Muzycznej im. I. J. Paderewskiego w Poznaniu
+            Urodziłem się 28 lipca 1977 r. W 1996 r. ukończyłem Państwowe Liceum Muzyczne im. M. Karłowicza w Poznaniu w
+            klasie lutnictwa. W 2002 r. uzyskałem dyplom i tytuł magistra sztuki w dziedzinie lutnictwo artystyczne na
+            Akademii Muzycznej im. I. J. Paderewskiego w Poznaniu
           </p>
           <a href="#antoni" class="article__more">więcej</a>
         </div>
@@ -231,19 +244,19 @@
       </p>
       <div class="gallery__slider-container">
         <!-- Swiper -->
-        <div class="swiper-container">
+        <div class="swiper-container swiper-container--gallery">
           <div class="swiper-navigators">
             <span class="swiper-button-prev"></span>
-            <span class="swiper-pagination"></span>
+            <span class="swiper-pagination swiper-pagination--gallery"></span>
             <span class="swiper-button-next"></span>
           </div>
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="dist/assets/images/violin.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="dist/assets/images/violin.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="dist/assets/images/violin.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="dist/assets/images/violin.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="dist/assets/images/violin.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="dist/assets/images/violin.jpg" alt=""></div>
+            <div class="swiper-slide swiper-slide__gallery"><img src="dist/assets/images/violin.jpg" alt=""></div>
+            <div class="swiper-slide swiper-slide__gallery"><img src="dist/assets/images/violin.jpg" alt=""></div>
+            <div class="swiper-slide swiper-slide__gallery"><img src="dist/assets/images/violin.jpg" alt=""></div>
+            <div class="swiper-slide swiper-slide__gallery"><img src="dist/assets/images/violin.jpg" alt=""></div>
+            <div class="swiper-slide swiper-slide__gallery"><img src="dist/assets/images/violin.jpg" alt=""></div>
+            <div class="swiper-slide swiper-slide__gallery"><img src="dist/assets/images/violin.jpg" alt=""></div>
           </div>
           <a href="#" class="gallery__more">więcej</a>
         </div>

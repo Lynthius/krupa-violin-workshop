@@ -1,7 +1,17 @@
 var appendNumber = 4;
 var prependNumber = 1;
 
-const swiper = new Swiper(".swiper-container", {
+var swiperHero = new Swiper(".swiper-container--hero", {
+  centeredSlides: true,
+  pagination: {
+    el: ".swiper-pagination--hero",
+    dynamicBullets: true,
+    slidesPerView: 1,
+  },
+  loop: true,
+});
+
+const swiperGallery = new Swiper(".swiper-container", {
   slidesPerView: 1,
   spaceBetween: 10,
   centeredSlides: true,
@@ -11,7 +21,7 @@ const swiper = new Swiper(".swiper-container", {
     prevEl: ".swiper-button-prev",
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination--gallery",
     type: "fraction",
   },
   breakpoints: {
@@ -20,7 +30,6 @@ const swiper = new Swiper(".swiper-container", {
       slidesPerView: 4,
       spaceBetweenSlides: 50,
       centeredSlides: false,
-
     },
   },
 });
@@ -29,7 +38,7 @@ document
   .querySelector(".prepend-2-slides")
   .addEventListener("click", function (e) {
     e.preventDefault();
-    swiper.prependSlide([
+    swiper1.prependSlide([
       '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
       '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
     ]);
@@ -39,14 +48,14 @@ document
   .querySelector(".prepend-slide")
   .addEventListener("click", function (e) {
     e.preventDefault();
-    swiper.prependSlide(
+    swiper1.prependSlide(
       '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
     );
   });
 
 document.querySelector(".append-slide").addEventListener("click", function (e) {
   e.preventDefault();
-  swiper.appendSlide(
+  swiper1.appendSlide(
     '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
   );
 });
@@ -55,7 +64,7 @@ document
   .querySelector(".append-2-slides")
   .addEventListener("click", function (e) {
     e.preventDefault();
-    swiper.appendSlide([
+    swiper1.appendSlide([
       '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
       '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
     ]);
