@@ -108,7 +108,7 @@
 .swiper-pagination-fraction,
 .swiper-pagination-custom,
 .swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: 10px;
+  bottom: 20px;
   left: 0;
   width: 100%; }
 
@@ -159,7 +159,7 @@ button.swiper-pagination-bullet {
   transition: 200ms transform, 200ms top; }
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 4px; }
+  margin: 0 10px; }
 
 .swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
   left: 50%;
