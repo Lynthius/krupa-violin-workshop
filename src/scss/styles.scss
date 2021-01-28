@@ -1110,6 +1110,7 @@ section {
 }
 .img-info-container {
   position: relative;
+  user-select: none;
 }
 .img-info {
   opacity: 0;
@@ -1128,7 +1129,7 @@ section {
     height: 100%;
     width: 100%;
     bottom: 0;
-    background: linear-gradient(to bottom, transparent 0%, black 100%);
+    background: linear-gradient(0deg, rgba(8, 8, 8, 0.8) 32.7%, rgba(8, 8, 8, 0) 79.79%);
   }
 
   &__date {
@@ -1168,9 +1169,19 @@ section {
     text-transform: uppercase;
     color: #B4B4B4;
   }
+  &__separator {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0;
+    height: 1px;
+    bottom: 6.8rem;
+    width: 14%;
+    background-color: rgba(81, 81, 81, 0.8);
+  }
+  &:hover {
+    opacity: 1;
+    transition: .3s;
+  }
 }
 
-.img-info:hover {
-  opacity: 1;
-  transition: .3s;
-}
