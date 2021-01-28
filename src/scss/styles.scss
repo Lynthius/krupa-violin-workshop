@@ -942,7 +942,7 @@ section {
 
   @media screen and (min-width: 590px) {
     & {
-      padding: 8rem 30.4rem 0;
+      padding: 8rem 18.8rem 0;
     }
   }
 
@@ -1000,13 +1000,13 @@ section {
 
   &__subtitle {
     text-align: center;
-    font-size: 12.7px;
     letter-spacing: 0.27em;
     text-transform: uppercase;
     color: #E7E4E0;
-
+    
     @media screen and (min-width: 590px) {
       & {
+        font-size: 12.7px;
         text-align: left;
       }
     }
@@ -1034,19 +1034,18 @@ section {
 .copyright {
   display: flex;
   justify-content: space-between;
-  padding: 0 3.4rem;
-  overflow: hidden;
+  padding: 1rem 3.4rem;
 
   @media screen and (min-width: 590px) {
     & {
-      padding: 8rem 30.4rem 0;
+      padding: 2rem 18.8rem;
     }
   }
 
   & p {
     font-family: "Orpheus Pro";
     font-size: 1.2rem;
-    line-height: 3.2rem;
+    margin: 0;
     letter-spacing: 0.2em;
     color: rgba(206, 206, 206, 0.6);
   }

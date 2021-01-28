@@ -678,7 +678,7 @@ section {
   overflow: hidden; }
   @media screen and (min-width: 590px) {
     .krupa {
-      padding: 8rem 30.4rem 0; } }
+      padding: 8rem 18.8rem 0; } }
   .krupa__footer {
     display: flex;
     flex-direction: column; }
@@ -715,12 +715,12 @@ section {
     border-left: 1px solid rgba(226, 225, 221, 0.3); }
   .krupa__subtitle {
     text-align: center;
-    font-size: 12.7px;
     letter-spacing: 0.27em;
     text-transform: uppercase;
     color: #E7E4E0; }
     @media screen and (min-width: 590px) {
       .krupa__subtitle {
+        font-size: 12.7px;
         text-align: left; } }
 
 .contact__header {
@@ -740,15 +740,14 @@ section {
 .copyright {
   display: flex;
   justify-content: space-between;
-  padding: 0 3.4rem;
-  overflow: hidden; }
+  padding: 1rem 3.4rem; }
   @media screen and (min-width: 590px) {
     .copyright {
-      padding: 8rem 30.4rem 0; } }
+      padding: 2rem 18.8rem; } }
   .copyright p {
     font-family: "Orpheus Pro";
     font-size: 1.2rem;
-    line-height: 3.2rem;
+    margin: 0;
     letter-spacing: 0.2em;
     color: rgba(206, 206, 206, 0.6); }
 
