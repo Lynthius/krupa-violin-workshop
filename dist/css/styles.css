@@ -800,6 +800,8 @@ section {
 .img-info-container {
   position: relative;
   user-select: none; }
+  .img-info-container img {
+    height: 100%; }
 
 .img-info {
   opacity: 0;
