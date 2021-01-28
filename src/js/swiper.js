@@ -23,7 +23,7 @@ const swiperHero = new Swiper(".swiper-container__hero", {
 
 const swiperGallery = new Swiper(".swiper-container__gallery", {
   slidesPerView: 1,
-  spaceBetween: 30,
+  spaceBetween: 1,
   centeredSlides: true,
   loop: true,
   navigation: {
@@ -38,7 +38,7 @@ const swiperGallery = new Swiper(".swiper-container__gallery", {
     // when window width is <= 999px
     999: {
       slidesPerView: 4,
-      spaceBetweenSlides: 50,
+      spaceBetween: 50,
       centeredSlides: false,
     },
   },

@@ -1107,15 +1107,30 @@ section {
     }
   }
 }
+
 .img-info-container {
   position: relative;
   user-select: none;
+}
+
+.img-info {
+  display: none;
+}
+
+@media screen and (min-width: 590px) {
+.img-info-container {
+  position: relative;
+  user-select: none;
+  object-fit: cover;
 
   & img {
+    object-fit: cover;
+    width: 100%;
     height: 100%;
   }
 }
 .img-info {
+  display: block;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -1187,4 +1202,4 @@ section {
     transition: .3s;
   }
 }
-
+}

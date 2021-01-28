@@ -10,10 +10,11 @@
   list-style: none;
   padding: 0;
   z-index: 1;
-  width: 100vw;
-  height: 100vh; }
+  width: 100%;
+  height: 100%; }
   .swiper-container__hero {
     margin: 0;
+    height: 100vh;
     width: 100vw; }
 
 .swiper-wrapper {
@@ -34,13 +35,13 @@
   width: 100px;
   text-transform: uppercase;
   align-self: flex-start;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem auto;
+  margin-bottom: 2rem;
   color: #EED4B2; }
   @media screen and (min-width: 590px) {
     .swiper-navigators {
       position: absolute;
-      top: -50px;
+      top: -60px;
       right: 58%;
       align-self: flex-end; } }
   @media screen and (max-width: 1490px) {
