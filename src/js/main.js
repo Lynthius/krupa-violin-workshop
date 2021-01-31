@@ -10,7 +10,6 @@ function getScrollPercent() {
   percentage = Math.round(
     ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100
   );
-  console.log(percentage);
 }
 window.addEventListener("scroll", getScrollPercent);
 window.addEventListener("onload", getScrollPercent);
