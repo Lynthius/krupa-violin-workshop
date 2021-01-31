@@ -39,6 +39,26 @@ img {
   max-width: 100%;
 }
 
+/* ANIMATIONS
+--------------------------------------------------------------------------- */
+@keyframes f-animation {
+  from {
+    stroke-dashoffset: 1181.2247314453125;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes lines-animation {
+  from {
+    stroke-dashoffset: 1181.2247314453125;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 /* HEADERS
 --------------------------------------------------------------------------- */
 h1,
@@ -87,6 +107,18 @@ a {
 .decoration-separator {
   text-align: center;
   display: block;
+
+  &__path-f1 {
+    stroke-dasharray: 1181.2247314453125;
+    stroke-dashoffset: 1181.2247314453125;
+    animation: f-animation linear 4s forwards;
+  }
+
+  &__path-f2 {
+    stroke-dasharray: 1181.2247314453125;
+    stroke-dashoffset: 1181.2247314453125;
+    animation: f-animation linear 4s forwards;
+  }
 
   &__image {
     margin: 6rem 0;
