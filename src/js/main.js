@@ -46,7 +46,7 @@ function drawingAnimation() {
 
   // Medium screens scroll percentage (less than 1001)
   if (window.innerHeight < 1001) {
-    if (percentage >= 12 && window.screen.width >= 992) {
+    if (percentage >= 10 && window.screen.width >= 992) {
       fObjsToAnimate.forEach((item) => {
         item.style.animation = "f-animation linear 3s forwards";
       });
