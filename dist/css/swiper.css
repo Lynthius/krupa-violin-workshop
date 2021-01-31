@@ -38,7 +38,7 @@
   margin: 1rem auto;
   margin-bottom: 2rem;
   color: #EED4B2; }
-  @media screen and (min-width: 590px) {
+  @media screen and (min-width: 890px) {
     .swiper-navigators {
       position: absolute;
       top: -60px;
@@ -221,7 +221,7 @@ button.swiper-pagination-bullet {
     .swiper-slide__gallery.swiper-slide-active {
       overflow: hidden;
       filter: brightness(100%); }
-      @media screen and (min-width: 590px) {
+      @media screen and (min-width: 890px) {
         .swiper-slide__gallery.swiper-slide-active {
           overflow: hidden;
           font-size: 30px;

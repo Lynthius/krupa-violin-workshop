@@ -101,11 +101,12 @@ a {
 
 .shadow-separator {
   width: 100%;
-  margin-top: -5px;
+  margin-top: -6px;
   height: 25px;
   background-color: #080808;
   position: relative;
   box-shadow: 0px 5px 12px 3px #080808, 0px -5px 12px 3px #080808;
+  z-index: 10;
 }
 
 .hr-separator-full {
@@ -133,7 +134,7 @@ a {
   width: 100%;
   height: 10.3rem;
 
-  @media screen and (min-width: 590px) {
+  @media screen and (min-width: 890px) {
     & {
       background: transparent;
     }
@@ -241,7 +242,7 @@ a {
   &__contact {
     display: none;
 
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 890px) {
       & {
         display: flex;
         flex-direction: column;
@@ -277,7 +278,7 @@ a {
   &__list {
     padding-top: 3.5rem;
 
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 890px) {
       & {
         padding-top: 3.5rem;
         padding-left: 10rem;
@@ -358,7 +359,7 @@ a {
   height: 100vh;
   overflow: hidden;
 
-  @media screen and (min-width: 590px) {
+  @media screen and (min-width: 890px) {
     & {
       justify-content: center;
       // background-image: url("/dist/assets/backgrounds/hero-bg-desktop.jpg");
@@ -394,7 +395,7 @@ a {
 section {
   padding: 2rem 3.4rem;
 
-  @media screen and (min-width: 590px) and (max-width: 1799px) {
+  @media screen and (min-width: 890px) and (max-width: 1799px) {
     & {
       padding: 2rem 12.4rem;
     }
@@ -420,7 +421,7 @@ section {
   // padding: 2rem 3.4rem;
   overflow: hidden;
 
-  // @media screen and (min-width: 590px) {
+  // @media screen and (min-width: 890px) {
   //   & {
   //     padding: 2rem 9.4rem;
   //   }
@@ -429,7 +430,7 @@ section {
   &__header {
     width: 30rem;
 
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 890px) {
       & {
         width: 50rem;
       }
@@ -443,7 +444,7 @@ section {
     text-align: center;
     margin-bottom: 0;
 
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 890px) {
       & {
         text-align: left;
       }
@@ -470,7 +471,7 @@ section {
     letter-spacing: 0.04em;
     color: #EED4B2;
 
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 890px) {
       & {
         text-align: center;
       }
@@ -487,7 +488,7 @@ section {
       margin-right: 3rem;
     }
 
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 890px) {
       &::after {
         content: "";
         background-color: #515151;
@@ -516,7 +517,7 @@ section {
   // padding: 2rem 3.4rem;
   overflow: hidden;
 
-  // @media screen and (min-width: 590px) {
+  // @media screen and (min-width: 890px) {
   //   & {
   //     padding: 2rem 16.4rem;
   //   }
@@ -551,7 +552,7 @@ section {
 
 .article {
   &__info {
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 890px) {
       &--left {
         max-width: 70%;
         text-align: left;
@@ -643,12 +644,14 @@ section {
   &__gallery {
     display: flex;
     justify-content: space-between;
+    align-self: center;
     flex-direction: column;
     margin-top: 12rem;
 
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 890px) {
       & {
         flex-direction: row;
+        align-self: stretch;
       }
     }
   }
@@ -676,7 +679,7 @@ section {
       left: 0;
     }
 
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 890px) {
       width: 50%;
       margin: 4rem;
       order: unset;
@@ -705,14 +708,15 @@ section {
 .offer {
   display: flex;
   flex-direction: column;
+  align-items: center;
   // padding: 2rem 3.4rem;
   overflow: hidden;
 
-  // @media screen and (min-width: 590px) {
-  //   & {
-  //     padding: 2rem 9.4rem;
-  //   }
-  // }
+  @media screen and (min-width: 890px) {
+    & {
+      align-items: stretch;
+    }
+  }
 
   &__container img {
     // width: 100%;
@@ -720,9 +724,9 @@ section {
     // margin-left: -3.5rem;
     // margin-top: 2rem;
 
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 890px) {
       & {
-        margin-left: -10rem;
+        margin-left: -12rem;
         min-width: 60%;
         margin-top: 12rem;
         flex: 2;
@@ -731,13 +735,14 @@ section {
   }
 
   &__image {
+    // text-align: center;
     width: 100%;
     margin: 2rem 0;
   }
 
-  @media screen and (min-width: 590px) {
+  @media screen and (min-width: 890px) {
     &__image {
-    width: 60%
+      width: 60%
     }
   }
 
@@ -749,7 +754,7 @@ section {
   }
 
   &__subcontainer--reverse {
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 890px) {
       & {
         // border: 1px dashed deeppink;
         display: flex;
@@ -760,7 +765,7 @@ section {
   }
 
   &__subcontainer {
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 890px) {
       & {
         // border: 1px dashed deeppink;
         display: flex;
@@ -771,7 +776,7 @@ section {
   }
 
   &__info {
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 890px) {
       & {
         margin-left: 14%;
         flex: 1;
@@ -788,7 +793,7 @@ section {
     width: 30rem;
     align-self: center;
 
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 890px) {
       & {
         width: 50rem;
       }
@@ -812,7 +817,7 @@ section {
       font-size: 12rem;
       position: absolute;
 
-      @media screen and (min-width: 590px) {
+      @media screen and (min-width: 890px) {
         left: 18rem;
       }
     }
@@ -840,7 +845,7 @@ section {
     border-left: 1px solid rgba(226, 225, 221, 0.3);
     margin: 3rem 0;
 
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 890px) {
       & {
         margin: 3rem -2.5rem 0;
       }
@@ -876,7 +881,7 @@ section {
   // padding: 2rem 3.4rem;
   overflow: hidden;
 
-  // @media screen and (min-width: 590px) {
+  // @media screen and (min-width: 890px) {
   //   & {
   //     padding: 2rem 9.4rem;
   //   }
@@ -886,7 +891,7 @@ section {
     width: 30rem;
     align-self: center;
 
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 890px) {
       & {
         width: 50rem;
         margin-bottom: 6rem;
@@ -911,7 +916,7 @@ section {
       font-size: 12rem;
       position: absolute;
 
-      @media screen and (min-width: 590px) {
+      @media screen and (min-width: 890px) {
         left: 18rem;
       }
     }
@@ -939,7 +944,7 @@ section {
   &__slider-container {
     margin-top: 6rem;
 
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 890px) {
       & {
         margin-top: 14rem;
       }
@@ -987,7 +992,7 @@ section {
   padding: 2rem 3.4rem 0;
   overflow: hidden;
 
-  @media screen and (min-width: 590px) {
+  @media screen and (min-width: 890px) {
     & {
       padding: 8rem 18.8rem 0;
     }
@@ -997,7 +1002,7 @@ section {
     display: flex;
     flex-direction: column;
 
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 890px) {
       & {
         flex-direction: row;
         justify-content: space-between;
@@ -1010,7 +1015,7 @@ section {
     flex-direction: column;
     align-items: center;
 
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 890px) {
       & {
         align-items: flex-start;
       }
@@ -1051,7 +1056,7 @@ section {
     text-transform: uppercase;
     color: #E7E4E0;
 
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 890px) {
       & {
         font-size: 12.7px;
         text-align: left;
@@ -1083,7 +1088,7 @@ section {
   justify-content: space-between;
   padding: 1rem 3.4rem;
 
-  @media screen and (min-width: 590px) {
+  @media screen and (min-width: 890px) {
     & {
       padding: 2rem 18.8rem;
     }
@@ -1108,7 +1113,7 @@ section {
   height: 100vh;
   width: 100vw;
 
-  @media screen and (min-width: 590px) {
+  @media screen and (min-width: 890px) {
     & {
       justify-content: center;
       background-image: url("../assets/backgrounds/hero-bg-desktop.jpg");
@@ -1127,7 +1132,7 @@ section {
   height: 100vh;
   width: 100vw;
 
-  @media screen and (min-width: 590px) {
+  @media screen and (min-width: 890px) {
     & {
       justify-content: center;
       background-image: url("../assets/backgrounds/hero-bg-desktop.jpg");
@@ -1146,7 +1151,7 @@ section {
   height: 100vh;
   width: 100vw;
 
-  @media screen and (min-width: 590px) {
+  @media screen and (min-width: 890px) {
     & {
       justify-content: center;
       background-image: url("../assets/backgrounds/hero-bg-desktop.jpg");
@@ -1164,7 +1169,7 @@ section {
   display: none;
 }
 
-@media screen and (min-width: 590px) {
+@media screen and (min-width: 890px) {
   .img-info-container {
     position: relative;
     user-select: none;

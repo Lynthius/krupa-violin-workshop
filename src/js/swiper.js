@@ -36,7 +36,7 @@ const swiperGallery = new Swiper(".swiper-container__gallery", {
   },
   breakpoints: {
     // when window width is <= 999px
-    999: {
+    890: {
       slidesPerView: 4,
       spaceBetween: 50,
       centeredSlides: false,
