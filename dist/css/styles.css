@@ -42,9 +42,15 @@ img {
   to {
     stroke-dashoffset: 0; } }
 
+@keyframes c-animation {
+  from {
+    stroke-dashoffset: 143.56497192382812; }
+  to {
+    stroke-dashoffset: 0; } }
+
 @keyframes lines-animation {
   from {
-    stroke-dashoffset: 1181.2247314453125; }
+    stroke-dashoffset: 143.56497192382812; }
   to {
     stroke-dashoffset: 0; } }
 
@@ -85,14 +91,20 @@ a {
 .decoration-separator {
   text-align: center;
   display: block; }
-  .decoration-separator__path-f1 {
-    stroke-dasharray: 1181.2247314453125;
-    stroke-dashoffset: 1181.2247314453125;
-    animation: f-animation linear 4s forwards; }
-  .decoration-separator__path-f2 {
-    stroke-dasharray: 1181.2247314453125;
-    stroke-dashoffset: 1181.2247314453125;
-    animation: f-animation linear 4s forwards; }
+  @media screen and (min-width: 600px) {
+    .decoration-separator__path-f {
+      stroke-dasharray: 1181.2247314453125;
+      stroke-dashoffset: 1181.2247314453125; }
+    .decoration-separator__path-c {
+      stroke-dasharray: 143.56497192382812;
+      stroke-dashoffset: 143.56497192382812; }
+    .decoration-separator__lines {
+      stroke-dasharray: 112.60745239257812;
+      stroke-dashoffset: 112.60745239257812; }
+    .decoration-separator__path {
+      stroke-opacity: 0;
+      opacity: 0;
+      transition: 3s linear; } }
   .decoration-separator__image {
     margin: 6rem 0; }
     @media screen and (min-width: 600px) {

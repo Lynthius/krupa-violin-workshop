@@ -45,6 +45,17 @@ img {
   from {
     stroke-dashoffset: 1181.2247314453125;
   }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes c-animation {
+  from {
+    stroke-dashoffset: 143.56497192382812;
+  }
+
   to {
     stroke-dashoffset: 0;
   }
@@ -52,8 +63,9 @@ img {
 
 @keyframes lines-animation {
   from {
-    stroke-dashoffset: 1181.2247314453125;
+    stroke-dashoffset: 143.56497192382812;
   }
+
   to {
     stroke-dashoffset: 0;
   }
@@ -108,16 +120,27 @@ a {
   text-align: center;
   display: block;
 
-  &__path-f1 {
-    stroke-dasharray: 1181.2247314453125;
-    stroke-dashoffset: 1181.2247314453125;
-    animation: f-animation linear 4s forwards;
-  }
+  @media screen and (min-width: 600px) {
+    &__path-f {
+      stroke-dasharray: 1181.2247314453125;
+      stroke-dashoffset: 1181.2247314453125;
+    }
 
-  &__path-f2 {
-    stroke-dasharray: 1181.2247314453125;
-    stroke-dashoffset: 1181.2247314453125;
-    animation: f-animation linear 4s forwards;
+    &__path-c {
+      stroke-dasharray: 143.56497192382812;
+      stroke-dashoffset: 143.56497192382812;
+    }
+
+    &__lines {
+      stroke-dasharray: 112.60745239257812;
+      stroke-dashoffset: 112.60745239257812;
+    }
+
+    &__path {
+      stroke-opacity: 0;
+      opacity: 0;
+      transition: 3s linear;
+    }
   }
 
   &__image {
