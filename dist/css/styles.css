@@ -83,7 +83,7 @@ a {
     display: block; } }
 
 .margin-separator {
-  margin: 3rem 0; }
+  margin: 6rem 0; }
   @media screen and (min-width: 600px) {
     .margin-separator {
       margin: 10rem 0; } }
@@ -106,6 +106,7 @@ a {
       opacity: 0;
       transition: 2s linear; } }
   .decoration-separator__image {
+    max-width: 100%;
     margin: 6rem 0; }
     @media screen and (min-width: 600px) {
       .decoration-separator__image {
@@ -786,13 +787,13 @@ section {
         font-size: 12.7px;
         text-align: left; } }
 
-.contact__header {
+.contact-footer__header {
   font-size: 2.8rem;
   letter-spacing: 0.12em;
   color: #EED4B2;
   margin-bottom: 0; }
 
-.contact__address {
+.contact-footer__address {
   font-weight: 350;
   font-size: 1.2rem;
   line-height: 2.7rem;
@@ -937,5 +938,92 @@ section {
       opacity: 1;
       transition: .3s; } }
 
-.map {
-  filter: invert(98%) contrast(80%) grayscale(1); }
+.contact {
+  width: 100vw;
+  height: 208vh;
+  padding: 0; }
+  @media screen and (min-width: 890px) {
+    .contact {
+      width: 100vw;
+      height: 100vh; } }
+  .contact__container {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%; }
+  @media screen and (min-width: 890px) {
+    .contact__container {
+      flex-direction: row; } }
+  .contact__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    padding: 4rem; }
+  .contact__title {
+    position: relative;
+    font-size: 6.5rem;
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 10rem; }
+    @media screen and (min-width: 890px) {
+      .contact__title {
+        font-size: 8.5rem;
+        text-align: left;
+        margin-top: 0; } }
+    .contact__title::before {
+      content: "Kontakt";
+      top: -4rem;
+      left: -23rem;
+      color: rgba(255, 255, 255, 0.03);
+      letter-spacing: 0.04em;
+      font-size: 12rem;
+      font-style: italic;
+      position: absolute; }
+  .contact__header {
+    font-size: 2rem;
+    letter-spacing: 0.12em;
+    text-align: center;
+    color: #EED4B2;
+    margin-bottom: 0; }
+    @media screen and (min-width: 890px) {
+      .contact__header {
+        font-size: 2.8rem;
+        text-align: left; } }
+  .contact__address {
+    position: relative;
+    font-weight: 350;
+    font-size: 1.2rem;
+    line-height: 2.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #B4B4B4; }
+    @media screen and (min-width: 890px) {
+      .contact__address {
+        text-align: left; } }
+  .contact__mail {
+    display: block; }
+    @media screen and (min-width: 890px) {
+      .contact__mail {
+        display: inline;
+        margin-right: 4.5rem; } }
+  @media screen and (min-width: 890px) {
+    .contact .address-line::after {
+      content: "";
+      position: absolute;
+      left: 18.2rem;
+      top: 1.2rem;
+      transform: rotate(-68deg);
+      width: 4.5rem;
+      height: 1px;
+      background-color: #B4B4B4; } }
+  .contact__map {
+    height: 100%;
+    width: 100%;
+    filter: invert(98%) contrast(80%) grayscale(1); }
