@@ -63,7 +63,7 @@ img {
 
 @keyframes lines-animation {
   from {
-    stroke-dashoffset: 143.56497192382812;
+    stroke-dashoffset: 441;
   }
 
   to {
@@ -131,15 +131,15 @@ a {
       stroke-dashoffset: 143.56497192382812;
     }
 
-    &__lines {
-      stroke-dasharray: 112.60745239257812;
-      stroke-dashoffset: 112.60745239257812;
+    &__line {
+      stroke-dasharray: 441;
+      stroke-dashoffset: 441;
     }
 
     &__path {
       stroke-opacity: 0;
       opacity: 0;
-      transition: 3s linear;
+      transition: 2s linear;
     }
   }
 

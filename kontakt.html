@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt - Krupa - violin and bow making workshop</title>
+  <title>Krupa - violin and bow making workshop</title>
+  <meta name="theme-color" content="#070707" />
+  <link rel="stylesheet" href="dist/css/styles.css">
+  <link rel="stylesheet" href="dist/css/swiper.css">
+  <link rel="stylesheet" href="https://use.typekit.net/uvu1eoi.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  
+  <main>
+    <header class="hero__header">
+      <div class="lang-switcher">
+        <button class="lang-switcher__btn--pl" lang="pl" hreflang="pl">PL</button>
+        <span class="lang-line"></span>
+        <button class="lang-switcher__btn--en activeLang" lang="en" hreflang="en">EN</button>
+      </div>
+      <nav class="nav-container">
+        <button class="hamburger hamburger--active" aria-expanded="true">
+          <span class="sr-only">Open / close</span>
+          <span class="hamburger__box">
+            <span class="hamburger__inner"></span>
+          </span>
+        </button>
+        <div class="navigation navigation--active">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="/">Home</a></li>
+            <li class="navigation__item"><a href="#about">O nas</a>
+              <ul class="navigation__sublist">
+                <li class="navigation__subitem"><a href="#antoni">Antoni Krupa</a></li>
+                <li class="navigation__subitem"><a href="#marcin">Marcin Krupa</a></li>
+                <li class="navigation__subitem"><a href="#krzysztof">Krzysztof Krupa</a></li>
+              </ul>
+            </li>
+            <li class="navigation__item"><a href="#gallery">Galeria</a></li>
+            <li class="navigation__item"><a href="/kontakt.html">Kontakt</a></li>
+          </ul>
+          <div class="navigation__contact">
+            <div class="navigation__info">
+              <iframe src="https://snazzymaps.com/embed/288207" width="100%" height="400px" style="border:none;"></iframe>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </main>
 </body>
+
 </html>
