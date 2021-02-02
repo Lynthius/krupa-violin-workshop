@@ -1180,7 +1180,7 @@ section {
 
 .swiper-slide-hero-2 {
   text-align: center;
-  background-image: url("../assets/backgrounds/hero-bg.jpg");
+  background-image: url("../assets/backgrounds/hero-bg-desktop-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: right;
@@ -1191,7 +1191,7 @@ section {
   @media screen and (min-width: 890px) {
     & {
       justify-content: center;
-      background-image: url("../assets/backgrounds/hero-bg-desktop.jpg");
+      background-image: url("../assets/backgrounds/hero-bg-desktop-2.jpg");
       background-position: right 95%;
     }
   }
@@ -1210,7 +1210,7 @@ section {
   @media screen and (min-width: 890px) {
     & {
       justify-content: center;
-      background-image: url("../assets/backgrounds/hero-bg-desktop.jpg");
+      background-image: url("../assets/backgrounds/hero-bg-desktop-3.jpg");
       background-position: right 95%;
     }
   }
