@@ -994,6 +994,10 @@ section {
     @media screen and (min-width: 890px) {
       .contact__header {
         font-size: 2.8rem;
+        text-align: left; }
+      .contact__header--right {
+        text-align: right; }
+      .contact__header--left {
         text-align: left; } }
   .contact__address {
     position: relative;
@@ -1005,7 +1009,9 @@ section {
     text-align: center;
     color: #B4B4B4; }
     @media screen and (min-width: 890px) {
-      .contact__address {
+      .contact__address--right {
+        text-align: right; }
+      .contact__address--left {
         text-align: left; } }
   .contact__mail {
     display: block; }
