@@ -8,6 +8,7 @@
   <meta name="theme-color" content="#070707" />
   <link rel="stylesheet" href="dist/css/styles.css">
   <link rel="stylesheet" href="dist/css/swiper.css">
+  <link rel="stylesheet" href="dist/css/aos.css" />
   <link rel="stylesheet" href="https://use.typekit.net/uvu1eoi.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
@@ -87,11 +88,11 @@
     <div class="shadow-separator"></div>
     <div class="margin-separator"></div>
     <section class="workshop">
-      <div class="workshop__header">
+      <div data-aos="fade-up" class="workshop__header">
         <h2 class="workshop__title">Pracownia</h2>
         <h3 class="workshop__subtitle">rok zał. 1967</h3>
       </div>
-      <p class="workshop__paragraph">
+      <p data-aos="fade-up" class="workshop__paragraph">
         Pracownia została założona <br class="mobile-break"> przez Antoniego Krupę, <br class="mobile-break"> absolwenta
         Technikum Budowy <br> Instrumentów Lutniczych w <br class="mobile-break"> Nowym
         Targu, obecnie profesora <br class="mobile-break"> Akademii Muzycznej w Poznaniu.
@@ -135,8 +136,10 @@
         <path class="decoration-separator__path"
           d="M125.586 282.298L120.617 279.359L120.556 285.132L125.586 282.298ZM78.6053 281.799L83.5744 284.739L83.6357 278.966L78.6053 281.799ZM121.092 281.751L83.1104 281.347L83.0997 282.347L121.081 282.751L121.092 281.751Z"
           fill="#ADADAD" mask="url(#)" />
-        <path class="decoration-separator__line" xmlns="http://www.w3.org/2000/svg" d="M310.5 62.5V503.5" stroke="#5B5B5B" />
-        <path class="decoration-separator__line" xmlns="http://www.w3.org/2000/svg" d="M490 30L490 401" stroke="#5B5B5B" />
+        <path class="decoration-separator__line" xmlns="http://www.w3.org/2000/svg" d="M310.5 62.5V503.5"
+          stroke="#5B5B5B" />
+        <path class="decoration-separator__line" xmlns="http://www.w3.org/2000/svg" d="M490 30L490 401"
+          stroke="#5B5B5B" />
         <path class="decoration-separator__path-c"
           d="M694.676 321.493C694.777 334.543 699.218 365.375 718.737 387.025C738.256 408.675 767.004 422.913 780 422.812"
           stroke="#ADADAD" />
@@ -167,12 +170,12 @@
           </p>
         </div>
         <div class="article__gallery">
-          <figure class="article__image ">
+          <figure data-aos="fade-up" class="article__image ">
             <a href="#antoni" class="article__more">więcej</a>
             <img src="dist/assets/images/antoni-krupa/antoni-skrzypce-przod.jpg" alt="">
             <figcaption>skrzypce | 2016</figcaption>
           </figure>
-          <figure class="article__image article__image--upper">
+          <figure data-aos="fade-up" class="article__image article__image--upper">
             <img src="dist/assets/images/antoni-krupa/antoni-skrzypce-tyl.jpg" alt="">
             <figcaption>skrzypce | 2016</figcaption>
           </figure>
@@ -418,6 +421,11 @@
   <script src="src/js/main.js"></script>
   <script src="packkage/swiper-bundle.js"></script>
   <script src="src/js/swiper.js"></script>
+  <!-- <script src="src/js/aos.js"></script> -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
