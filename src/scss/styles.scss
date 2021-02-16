@@ -1452,3 +1452,13 @@ section {
     filter: invert(98%) contrast(80%) grayscale(1);
   }
 }
+
+.test_bg {
+  width: 100%;
+  height: 110%;
+  position: absolute;
+  background-image: url(/dist/assets/images/antoni-krupa/antoni-skrzypce-tyl.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
