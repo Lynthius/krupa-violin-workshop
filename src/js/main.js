@@ -48,34 +48,34 @@ function drawingAnimation() {
   if (window.innerHeight < 1001) {
     if (percentage >= 10 && window.screen.width >= 992) {
       fObjsToAnimate.forEach((item) => {
-        item.style.animation = "f-animation linear 3s .5s forwards";
+        item.style.animation = "f-animation linear 2s .5s forwards";
       });
       cObjsToAnimate.forEach((item) => {
-        item.style.animation = "c-animation linear 2s forwards";
+        item.style.animation = "c-animation linear 1s forwards";
       });
       pathsToAnimate.forEach((item) => {
         item.style.opacity = "1";
         item.style.strokeOpacity = "0.5";
       });
       linesToAnimate.forEach((item) => {
-        item.style.animation = "lines-animation linear 2s forwards";
+        item.style.animation = "lines-animation linear 1s forwards";
       });
     }
     // Large screens scroll percentage (more than 1001)
   } else if (window.innerHeight >= 1001) {
     if (percentage >= 9 && window.screen.width >= 992) {
       fObjsToAnimate.forEach((item) => {
-        item.style.animation = "f-animation linear 3s .5s forwards";
+        item.style.animation = "f-animation linear 2s .5s forwards";
       });
       cObjsToAnimate.forEach((item) => {
-        item.style.animation = "c-animation linear 2s forwards";
+        item.style.animation = "c-animation linear 1s forwards";
       });
       pathsToAnimate.forEach((item) => {
         item.style.opacity = "1";
         item.style.strokeOpacity = "0.5";
       });
       linesToAnimate.forEach((item) => {
-        item.style.animation = "lines-animation linear 2s forwards";
+        item.style.animation = "lines-animation linear 1s forwards";
       });
     }
   }
