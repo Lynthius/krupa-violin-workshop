@@ -274,7 +274,7 @@ a {
 }
 
 .navigation {
-  z-index: 2;
+  z-index: 4;
   // opacity: 0;
   display: flex;
   visibility: hidden;
@@ -366,7 +366,7 @@ a {
 }
 
 .lang-switcher {
-  z-index: 3;
+  z-index: 4;
   display: flex;
   justify-content: space-between;
   width: 8.5rem;
@@ -375,7 +375,7 @@ a {
   left: 2.2rem;
 
   & button {
-    z-index: 999;
+    z-index: 4;
     background-color: transparent;
     border: none;
     font-family: Orpheus Pro;
@@ -596,6 +596,22 @@ section {
       font-style: italic;
       font-size: 12rem;
       position: absolute;
+    }
+
+    &--antoni-krupa {
+      font-size: 4.6rem;
+      text-align: left;
+
+      &::before {
+        content: "Antoni\00a0Krupa";
+        top: -3rem;
+        left: 7rem;
+        color: rgba(255, 255, 255, 0.03);
+        letter-spacing: 0.04em;
+        font-style: italic;
+        font-size: 12rem;
+        position: absolute;
+      }
     }
   }
 
@@ -1316,6 +1332,39 @@ section {
   }
 }
 
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  &__title {
+    position: relative;
+    font-size: 4.6rem;
+    letter-spacing: 0.04em;
+    text-align: left;
+    margin-bottom: 0;
+
+    &::before {
+      content: "Antoni\00a0Krupa";
+      top: -3rem;
+      left: 7rem;
+      color: rgba(255, 255, 255, 0.03);
+      letter-spacing: 0.04em;
+      font-style: italic;
+      font-size: 12rem;
+      position: absolute;
+    }
+  }
+
+  &__article {
+    position: relative;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .contact {
   width: 100vw;
   height: 208vh;
@@ -1393,9 +1442,11 @@ section {
         font-size: 2.8rem;
         text-align: left;
       }
+
       &--right {
         text-align: right;
       }
+
       &--left {
         text-align: left;
       }
@@ -1416,6 +1467,7 @@ section {
       &--right {
         text-align: right;
       }
+
       &--left {
         text-align: left;
       }
