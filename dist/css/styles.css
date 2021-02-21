@@ -156,7 +156,7 @@ a {
   background-color: transparent; }
 
 .hamburger__box {
-  z-index: 4;
+  z-index: 5;
   display: inline-block;
   position: fixed;
   top: 3.8rem;
@@ -955,6 +955,12 @@ section {
   display: flex;
   flex-direction: column;
   overflow: hidden; }
+  .personal-info__header {
+    width: 30rem;
+    align-self: center; }
+    @media screen and (min-width: 890px) {
+      .personal-info__header {
+        width: 50rem; } }
   .personal-info__title {
     position: relative;
     font-size: 4.6rem;
@@ -970,11 +976,34 @@ section {
       font-style: italic;
       font-size: 12rem;
       position: absolute; }
-  .personal-info__article {
-    position: relative;
-    margin-top: 6rem;
+  .personal-info__container {
     display: flex;
     flex-direction: column; }
+    @media screen and (min-width: 890px) {
+      .personal-info__container {
+        flex-direction: row;
+        justify-content: space-between; } }
+  .personal-info__image {
+    text-align: right;
+    width: 100%;
+    margin: 2rem 0;
+    padding: 0; }
+  @media screen and (min-width: 890px) {
+    .personal-info__image {
+      width: 40rem; } }
+  .personal-info__image img {
+    margin-left: 0;
+    margin-top: 6rem;
+    max-width: 100%; }
+  @media screen and (min-width: 890px) {
+    .personal-info__info {
+      max-width: 50rem; } }
+  .personal-info__paragraph {
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 2.7rem;
+    letter-spacing: 0.2em;
+    margin-top: 4rem; }
 
 .contact {
   width: 100vw;

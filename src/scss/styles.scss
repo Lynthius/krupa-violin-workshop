@@ -207,7 +207,7 @@ a {
 }
 
 .hamburger__box {
-  z-index: 4;
+  z-index: 5;
   display: inline-block;
   position: fixed;
   top: 3.8rem;
@@ -1338,6 +1338,28 @@ section {
   flex-direction: column;
   overflow: hidden;
 
+  @media screen and (min-width: 890px) {
+    & {
+      // flex-direction: row;
+      // align-items: stretch;
+      // justify-content: space-between;
+      // align-content: space-between;
+      // align-self: space-between;
+      // align-items: space-between;
+    }
+  }
+
+  &__header {
+    width: 30rem;
+    align-self: center;
+
+    @media screen and (min-width: 890px) {
+      & {
+        width: 50rem;
+      }
+    }
+  }
+
   &__title {
     position: relative;
     font-size: 4.6rem;
@@ -1357,11 +1379,86 @@ section {
     }
   }
 
-  &__article {
-    position: relative;
-    margin-top: 6rem;
+
+  &__container {
     display: flex;
     flex-direction: column;
+    // width: 100%;
+    // margin: 2rem 0;
+    // margin-left: -3.5rem;
+    // margin-top: 2rem;
+
+    @media screen and (min-width: 890px) {
+      & {
+        flex-direction: row;
+        justify-content: space-between;
+        // align-self: center;
+      }
+    }
+  }
+
+  &__image {
+    text-align: right;
+    width: 100%;
+    margin: 2rem 0;
+    padding: 0;
+  }
+
+  @media screen and (min-width: 890px) {
+    &__image {
+      width: 40rem;
+    }
+  }
+
+  &__image img {
+    margin-left: 0;
+    margin-top: 6rem;
+    max-width: 100%;
+    // min-height: 50rem;
+  }
+
+  &__subcontainer--reverse {
+    @media screen and (min-width: 890px) {
+      & {
+        // border: 1px dashed deeppink;
+        // display: flex;
+        // flex-direction: row-reverse;
+        // justify-content: space-between;
+      }
+    }
+  }
+
+  &__subcontainer {
+    @media screen and (min-width: 890px) {
+      & {
+        // border: 1px dashed deeppink;
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: center;
+      }
+    }
+  }
+
+  &__info {
+    @media screen and (min-width: 890px) {
+      & {
+        // margin-left: 14%;
+        // flex: 1;
+        // border: 1px dashed salmon;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        max-width: 50rem;
+      }
+    }
+  }
+
+  &__paragraph {
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 2.7rem;
+    letter-spacing: 0.2em;
+    margin-top: 4rem;
   }
 }
 
