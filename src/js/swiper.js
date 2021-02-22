@@ -23,7 +23,7 @@ const swiperHero = new Swiper(".swiper-container__hero", {
 
 const swiperGallery = new Swiper(".swiper-container__gallery", {
   slidesPerView: 1,
-  spaceBetween: 1,
+  spaceBetween: 40,
   centeredSlides: true,
   loop: true,
   navigation: {
@@ -38,6 +38,29 @@ const swiperGallery = new Swiper(".swiper-container__gallery", {
     // when window width is <= 999px
     890: {
       slidesPerView: 4,
+      spaceBetween: 50,
+      centeredSlides: false,
+    },
+  },
+});
+
+const swiperFeatured = new Swiper(".swiper-container__featured", {
+  slidesPerView: 1,
+  spaceBetween: 40,
+  // centeredSlides: true,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination__featured",
+    type: "fraction",
+  },
+  breakpoints: {
+    // when window width is <= 999px
+    890: {
+      slidesPerView: 2,
       spaceBetween: 50,
       centeredSlides: false,
     },

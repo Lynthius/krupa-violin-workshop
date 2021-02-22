@@ -1665,7 +1665,7 @@ section {
   &__subtitle {
     font-style: normal;
     font-weight: normal;
-    font-size: 2.8rem;
+    font-size: 18px;
     letter-spacing: 0.12em;
     color: #EED4B2;
   }
@@ -1679,6 +1679,7 @@ section {
     margin-top: 4rem;
     color: #B4B4B4;
     text-align: left;
+
     @media screen and (min-width: 890px) {
       & {
         text-align: center;
@@ -1686,12 +1687,46 @@ section {
     }
   }
 
+  &__info {
+    // position: relative;
+    margin-bottom: 6rem;
+    // border: 1px deeppink dashed;
+  }
+
+  &__list {
+    position: relative;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 12px;
+    line-height: 27px;
+    padding-left: 3.2rem;
+    /* or 225% */
+
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: #B4B4B4;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      height: 40%;
+      width: 1px;
+      border-left: 1px solid #6C6C6C;
+    }
+  }
+
   &__slider-container {
     margin-top: 6rem;
+    padding-top: 4rem;
+    overflow: hidden;
 
     @media screen and (min-width: 890px) {
       & {
-        margin-top: 14rem;
+        margin-top: 10rem;
       }
     }
   }

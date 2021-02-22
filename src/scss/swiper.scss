@@ -19,6 +19,11 @@
      height: 100vh;
      width: 100vw;
    }
+
+   &__featured {
+     margin: 0;
+     // overflow-x: hidden;
+   }
  }
 
  .swiper-wrapper {
@@ -56,6 +61,17 @@
    @media screen and (max-width: 1490px) {
      & {
        right: 55.5%;
+     }
+   }
+
+   &--featured {
+     @media screen and (min-width: 890px) {
+       & {
+         position: absolute;
+         top: -50px;
+         right: 0;
+         align-self: flex-end;
+       }
      }
    }
  }
@@ -128,6 +144,16 @@
    .swiper-pagination__hero {
      bottom: 40px;
    }
+ }
+
+ .swiper-pagination__featured {
+   font-family: 'Nunito', sans-serif;
+   font-size: 14px;
+   letter-spacing: 0.2em;
+   text-align: center;
+   transition: 300ms opacity;
+   transform: translate3d(0, 0, 0);
+   z-index: 10;
  }
 
  .swiper-pagination.swiper-pagination-hidden {
@@ -291,5 +317,9 @@
          }
        }
      }
+   }
+
+   &__featured {
+     height: 70rem;
    }
  }

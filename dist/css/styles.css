@@ -1132,7 +1132,7 @@ section {
   .featured-instruments__subtitle {
     font-style: normal;
     font-weight: normal;
-    font-size: 2.8rem;
+    font-size: 18px;
     letter-spacing: 0.12em;
     color: #EED4B2; }
   .featured-instruments__paragraph {
@@ -1147,11 +1147,35 @@ section {
     @media screen and (min-width: 890px) {
       .featured-instruments__paragraph {
         text-align: center; } }
+  .featured-instruments__info {
+    margin-bottom: 6rem; }
+  .featured-instruments__list {
+    position: relative;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 12px;
+    line-height: 27px;
+    padding-left: 3.2rem;
+    /* or 225% */
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #B4B4B4; }
+    .featured-instruments__list::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      height: 40%;
+      width: 1px;
+      border-left: 1px solid #6C6C6C; }
   .featured-instruments__slider-container {
-    margin-top: 6rem; }
+    margin-top: 6rem;
+    padding-top: 4rem;
+    overflow: hidden; }
     @media screen and (min-width: 890px) {
       .featured-instruments__slider-container {
-        margin-top: 14rem; } }
+        margin-top: 10rem; } }
   .featured-instruments__btns button {
     background-color: transparent;
     border: none;
