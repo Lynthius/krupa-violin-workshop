@@ -1610,6 +1610,127 @@ section {
   }
 }
 
+.featured-instruments {
+  display: flex;
+  flex-direction: column;
+  // padding: 2rem 3.4rem;
+  overflow: hidden;
+
+  // @media screen and (min-width: 890px) {
+  //   & {
+  //     padding: 2rem 9.4rem;
+  //   }
+  // }
+
+  &__header {
+    width: 30rem;
+    align-self: center;
+
+    @media screen and (min-width: 890px) {
+      & {
+        width: 50rem;
+        margin-bottom: 6rem;
+      }
+    }
+  }
+
+  &__title {
+    position: relative;
+    font-size: 4.6rem;
+    line-height: 4.8rem;
+    letter-spacing: 0.04em;
+    margin-bottom: 0;
+    text-align: left;
+
+    @media screen and (min-width: 890px) {
+      text-align: center;
+    }
+
+    &::before {
+      content: "Wyróżnione\00a0Modele";
+      top: -4rem;
+      left: -64rem;
+      color: rgba(255, 255, 255, 0.03);
+      letter-spacing: 0.04em;
+      font-style: italic;
+      font-size: 12rem;
+      position: absolute;
+
+      @media screen and (min-width: 890px) {
+        left: 18rem;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.8rem;
+    letter-spacing: 0.12em;
+    color: #EED4B2;
+  }
+
+  &__paragraph {
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2.7rem;
+    letter-spacing: 0.2em;
+    margin-top: 4rem;
+    color: #B4B4B4;
+    text-align: left;
+    @media screen and (min-width: 890px) {
+      & {
+        text-align: center;
+      }
+    }
+  }
+
+  &__slider-container {
+    margin-top: 6rem;
+
+    @media screen and (min-width: 890px) {
+      & {
+        margin-top: 14rem;
+      }
+    }
+  }
+
+  &__btns button {
+    background-color: transparent;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 350;
+    font-size: 1.2rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #EED4B2;
+  }
+
+  &__btns-status {
+    color: #EED4B2;
+    letter-spacing: 0.2em;
+  }
+
+  &__more {
+    font-size: 20px;
+    text-align: right;
+    margin-top: 5rem;
+    margin-right: 6.6rem;
+
+    &::before {
+      content: "";
+      background-color: #515151;
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 8.2rem;
+      margin-right: 2rem;
+    }
+  }
+}
+
 .contact {
   width: 100vw;
   height: 208vh;

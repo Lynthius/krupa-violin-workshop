@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* BASE STYLES
 --------------------------------------------------------------------------- */
 /* 
@@ -1093,6 +1094,89 @@ section {
       position: relative;
       vertical-align: middle;
       width: 4.2rem;
+      margin-right: 2rem; }
+
+.featured-instruments {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+  .featured-instruments__header {
+    width: 30rem;
+    align-self: center; }
+    @media screen and (min-width: 890px) {
+      .featured-instruments__header {
+        width: 50rem;
+        margin-bottom: 6rem; } }
+  .featured-instruments__title {
+    position: relative;
+    font-size: 4.6rem;
+    line-height: 4.8rem;
+    letter-spacing: 0.04em;
+    margin-bottom: 0;
+    text-align: left; }
+    @media screen and (min-width: 890px) {
+      .featured-instruments__title {
+        text-align: center; } }
+    .featured-instruments__title::before {
+      content: "Wyróżnione\00a0Modele";
+      top: -4rem;
+      left: -64rem;
+      color: rgba(255, 255, 255, 0.03);
+      letter-spacing: 0.04em;
+      font-style: italic;
+      font-size: 12rem;
+      position: absolute; }
+      @media screen and (min-width: 890px) {
+        .featured-instruments__title::before {
+          left: 18rem; } }
+  .featured-instruments__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.8rem;
+    letter-spacing: 0.12em;
+    color: #EED4B2; }
+  .featured-instruments__paragraph {
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2.7rem;
+    letter-spacing: 0.2em;
+    margin-top: 4rem;
+    color: #B4B4B4;
+    text-align: left; }
+    @media screen and (min-width: 890px) {
+      .featured-instruments__paragraph {
+        text-align: center; } }
+  .featured-instruments__slider-container {
+    margin-top: 6rem; }
+    @media screen and (min-width: 890px) {
+      .featured-instruments__slider-container {
+        margin-top: 14rem; } }
+  .featured-instruments__btns button {
+    background-color: transparent;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 350;
+    font-size: 1.2rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #EED4B2; }
+  .featured-instruments__btns-status {
+    color: #EED4B2;
+    letter-spacing: 0.2em; }
+  .featured-instruments__more {
+    font-size: 20px;
+    text-align: right;
+    margin-top: 5rem;
+    margin-right: 6.6rem; }
+    .featured-instruments__more::before {
+      content: "";
+      background-color: #515151;
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 8.2rem;
       margin-right: 2rem; }
 
 .contact {
